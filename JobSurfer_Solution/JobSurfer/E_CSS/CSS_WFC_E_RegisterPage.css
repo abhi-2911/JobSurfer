@@ -1,0 +1,557 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA_3 img { /*image*/
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 430px;
+    width: 1340px;
+}
+
+.pA_3 { /*employer register*/
+    position: absolute;
+    top: 170px;
+    left: 15px;
+    color: white;
+    /*opacity: 0.8;*/
+    font-size: 30px;
+    font-family: Arial;
+    text-shadow: 2px 2px 2px #000000;
+    background-color: #3065e2;
+    padding-left: 30px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#divB_3 { /*Box*/
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    height: 400px;
+    width: 900px;
+    background-color: darkgray;
+    opacity: 0.9;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px #6f6d6d;
+    overflow: scroll;
+}
+
+.labelA_3 { /*username*/
+    position: absolute;
+    top: 10px; /*difference between label & textbox 40px*/ /*difference between textbox & label 60px*/
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxA_3 { /*username textbox*/
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelB_3 { /*first name*/
+    position: absolute;
+    top: 110px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxB_3 { /*first name textbox*/
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelC_3 { /*last name*/
+    position: absolute;
+    top: 210px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxC_3 { /*last name textbox*/
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelD_3 { /*designation*/
+    position: absolute;
+    top: 310px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxD_3 { /*designation textbox*/
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelE_3 { /*company name*/
+    position: absolute;
+    top: 410px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxE_3 { /*company name textbox*/
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelF_3 { /*email id*/
+    position: absolute;
+    top: 510px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxF_3 { /*email id textbox*/
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelN_3 { /*profile picture*/
+    position: absolute;
+    top: 610px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.fileuploadA_3 { /* profile picture fileupload control*/
+    position: absolute;
+    top: 650px;
+    left: 0px;
+    height: 40px;
+    width: 335px;
+    font-family: Consolas;
+    font-size: 15px;
+}
+
+.labelG_3 { /*state dropdownlist label*/
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.ddlA_3 { /*state dropdownlist*/
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 310px;
+    height: 40px;
+    background-color: gainsboro;
+    font-size: 18px;
+}
+
+.labelH_3 { /*city dropdownlist label*/
+    position: absolute;
+    top: 110px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.ddlB_3 { /*city dropdownlist*/
+    position: absolute;
+    top: 150px;
+    right: 5px;
+    width: 310px;
+    height: 40px;
+    background-color: gainsboro;
+    font-size: 18px;
+}
+
+.labelI_3 { /*industry dropdownlist label*/
+    position: absolute;
+    top: 210px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.ddlC_3 { /*industry dropdownlist*/
+    position: absolute;
+    top: 250px;
+    right: 5px;
+    width: 310px;
+    height: 40px;
+    background-color: gainsboro;
+    font-size: 18px;
+}
+
+.labelJ_3 { /*address label*/
+    position: absolute;
+    top: 310px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxG_3 { /*address textbox*/
+    position: absolute;
+    top: 350px;
+    right: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelK_3 { /*contact number label*/
+    position: absolute;
+    top: 450px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxH_3 { /*contact number textbox*/
+    position: absolute;
+    top: 510px;
+    right: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelL_3 { /*password label*/
+    position: absolute;
+    top: 570px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxI_3 { /*password textbox*/
+    position: absolute;
+    top: 610px;
+    right: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelM_3 { /*Confirm Password label*/
+    position: absolute;
+    top: 670px;
+    right: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxJ_3 { /*Confirm Password textbox*/
+    position: absolute;
+    top: 710px;
+    right: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+#divA_3 hr {
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    width: 900px;
+}
+
+.buttonA_3 { /*register button*/
+    position: absolute;
+    top: 800px;
+    right: 350px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*register button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonB_3 { /*Login button*/
+    position: absolute;
+    top: 800px;
+    right: 350px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*Login button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+
+/******************************requiredFeild Validator****************************************/
+
+.rfvA_3 { /*username*/
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvB_3 { /*first name*/
+    position: absolute;
+    left: 340px;
+    top: 160px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvC_3 { /*last name*/
+    position: absolute;
+    left: 340px;
+    top: 260px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvD_3 { /*designation*/
+    position: absolute;
+    left: 340px;
+    top: 360px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvE_3 { /*company name*/
+    position: absolute;
+    left: 340px;
+    top: 460px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvF_3 { /*email id*/
+    position: absolute;
+    left: 340px;
+    top: 560px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvG_3 { /*state*/
+    position: absolute;
+    right: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvH_3 { /*city*/
+    position: absolute;
+    right: 340px;
+    top: 160px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvI_3 { /*industry*/
+    position: absolute;
+    right: 340px;
+    top: 260px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvJ_3 { /*address*/
+    position: absolute;
+    right: 360px;
+    top: 380px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvK_3 { /*contact number*/
+    position: absolute;
+    right: 350px;
+    top: 520px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvL_3 { /*password*/
+    position: absolute;
+    right: 350px;
+    top: 620px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvM_3 { /*confirm password*/
+    position: absolute;
+    right: 350px;
+    top: 720px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvN_3 { /*profile picture*/
+    position: absolute;
+    left: 340px;
+    top: 660px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/******************************other_Validator****************************************/
+
+
+.revA_3 { /*username*/
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.cvA_3 { /*username*/
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revB_3 { /*first Name*/
+    position: absolute;
+    left: 340px;
+    top: 160px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revC_3 { /*last name*/
+    position: absolute;
+    left: 340px;
+    top: 260px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revD_3 { /*designation*/
+    position: absolute;
+    left: 340px;
+    top: 360px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revE_3 { /*company name*/
+    position: absolute;
+    left: 340px;
+    top: 460px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revF_3 { /*email id*/
+    position: absolute;
+    left: 340px;
+    top: 560px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revG_3 { /*address*/
+    position: absolute;
+    right: 360px;
+    top: 380px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revH_3 { /*contact number*/
+    position: absolute;
+    right: 350px;
+    top: 520px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.cvB_3 { /*password*/
+    position: absolute;
+    right: 350px;
+    top: 620px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.comparevA_3 { /*confirm password*/
+    position: absolute;
+    right: 350px;
+    top: 720px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}

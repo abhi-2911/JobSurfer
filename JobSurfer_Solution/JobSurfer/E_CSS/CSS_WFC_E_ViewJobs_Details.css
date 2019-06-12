@@ -1,0 +1,307 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/   /*label & value 30px , value & label 50px*/
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 450px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+    overflow:scroll;
+}
+
+.labelA_3 { /*job title label*/
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding-left:20px;
+    padding-right:10px;
+    background-color:blue;
+    color:navajowhite;
+    text-shadow:1px 1px 3px black;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.labelB_3 { /*company name label*/
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueB_3{ /*company name value label*/
+    position: absolute;
+    top: 100px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelC_3 { /*State name label*/
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueC_3{ /*state name value label*/
+    position: absolute;
+    top: 180px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelD_3 { /*city name label*/
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueD_3{ /*city name value label*/
+    position: absolute;
+    top: 260px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelE_3 { /*role label*/
+    position: absolute;
+    top: 310px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueE_3{ /*role value label*/
+    position: absolute;
+    top: 340px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelF_3 { /*education label*/
+    position: absolute;
+    top: 390px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueF_3{ /*education value label*/
+    position: absolute;
+    top: 420px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelG_3 { /*salary lakh label*/
+    position: absolute;
+    top: 470px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.lakhValueG_3{ /*salary lakh value label*/
+    position: absolute;
+    top: 500px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+.thousandValueG_3{ /*salary thousand value label*/
+    position: absolute;
+    top: 500px;
+    left: 100px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelH_3 { /*vacancy label*/
+    position: absolute;
+    top: 550px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueH_3{ /*vacancy value label*/
+    position: absolute;
+    top: 580px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelI_3 { /*Interview from label*/
+    position: absolute;
+    top: 630px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.fromDayI_3{ /*Interview from_day value label*/
+    position: absolute;
+    top: 660px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+.fromMonthI_3{ /*Interview from_month value label*/
+    position: absolute;
+    top: 660px;
+    left: 50px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+.fromYearI_3{ /*Interview from_year value label*/
+    position: absolute;
+    top: 660px;
+    left: 100px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+
+.labelJ_3 { /*Interview till label*/
+    position: absolute;
+    top: 710px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.tillDayJ_3{ /*Interview till_day value label*/
+    position: absolute;
+    top: 740px;
+    left: 20px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+.tillMonthJ_3{ /*Interview till_month value label*/
+    position: absolute;
+    top: 740px;
+    left: 50px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+.tillYearJ_3{ /*Interview till_year value label*/
+    position: absolute;
+    top: 740px;
+    left: 100px;
+     color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+.labelK_3 { /*description label*/
+    position: absolute;
+    top: 790px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxK_3{ /*description value label*/
+    position: absolute;
+    top: 820px;
+    left: 20px;
+    height:100px;
+    width:400px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color:lightsteelblue;
+    color: white;
+    text-shadow:1px 1px 3px #011b97;
+}
+
+#divA1_3 hr{  /*horizontal line*/
+    position:absolute;
+    top:950px;
+    left:20px;
+    width:550px;
+    height:2px;
+}

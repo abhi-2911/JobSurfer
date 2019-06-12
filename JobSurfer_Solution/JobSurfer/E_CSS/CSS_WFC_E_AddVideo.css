@@ -1,0 +1,98 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 300px;
+    width: 700px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.imageA_3 { /*youtube logo*/
+    position: absolute;
+    top: 15px;
+    right: 280px;
+    height: 100px;
+    width: 130px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 7px black;
+}
+
+
+.labelA_3 { /*company video label*/
+    position: absolute;
+    top: 130px;
+    left: 230px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxA_3 { /*link textbox*/
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.rfvA_3 { /*required feild validator link textbox*/
+    position: absolute;
+    right: 100px;
+    top: 190px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.buttonA_3 { /*Save button*/
+    position: absolute;
+    left: 275px;
+    bottom: 20px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*Save button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+
+    .buttonB_3 { /*update button*/
+    position: absolute;
+    left: 275px;
+    bottom: 20px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+
+    .buttonB_3:hover { /*update button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+
+    .vsumA_3 { /*validation summary*/
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}

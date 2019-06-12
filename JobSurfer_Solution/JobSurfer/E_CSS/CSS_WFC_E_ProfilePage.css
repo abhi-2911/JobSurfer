@@ -1,0 +1,307 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.imageA_3 { /*profile pic*/
+    border: 2px solid black;
+    position: absolute;
+    top: 110px;
+    left: 250px;
+    box-shadow: black 2px 2px 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.buttonMessage{/*Messages button*/
+    position: absolute;
+    left: 230px;
+    top: 400px;
+    width:250px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+    opacity:0.7;
+    border:inset #b4b4b4;
+}
+.buttonMessage:hover{/*Messages button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.buttonNotification{/*Notifications button*/
+    position: absolute;
+    left: 230px;
+    top: 460px;
+    width:250px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+    opacity:0.7;
+    border:inset #b4b4b4;
+}
+.buttonNotification:hover{ /*Notifications button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+
+#divA_3 { /*emp name box*/
+    height: 90px;
+    width: 820px;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    border-bottom: 5px solid black;
+    box-shadow: 2px 2px 5px #808080;
+    background:linear-gradient(to bottom,#59a5ff,#d1d5ff);
+    opacity:0.6;
+}
+.pA_3 { /*emp name box text*/
+    position:absolute;
+    left:220px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 35px;
+}
+
+#divB_3 { /*emp info box*/
+    position: absolute;
+    right: 80px;
+    top: 240px;
+    height: 350px;
+    width: 750px;
+    border: 3px solid gray;
+    background:linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity:0.7;
+    box-shadow: 2px 2px 5px black;
+    overflow:scroll;
+}
+
+.labelA_3 { /*username */   /*gap between is 60px */
+    position:absolute;
+    left:150px;
+    top:5px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelC_3 { /*first name */
+    position:absolute;
+    left:150px;
+    top:65px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelE_3 { /*last name */
+    position:absolute;
+    left:150px;
+    top:125px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelG_3 { /*designation */
+    position:absolute;
+    left:150px;
+    top:185px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelI_3 { /*Company Name */
+    position:absolute;
+    left:150px;
+    top:245px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelK_3 { /*Email ID */
+    position:absolute;
+    left:150px;
+    top:305px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelM_3 { /*State */
+    position:absolute;
+    left:150px;
+    top:365px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelO_3 { /*City */
+    position:absolute;
+    left:150px;
+    top:425px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelQ_3 { /*Industry */
+    position:absolute;
+    left:150px;
+    top:485px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelS_3 { /*Contact Number */
+    position:absolute;
+    left:150px;
+    top:545px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelU_3 { /*Member Since */
+    position:absolute;
+    left:150px;
+    top:605px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+
+#divB_3 hr{    /*horizontal rule at the end*/
+    position:absolute;
+    left:20px;
+    top:655px;
+    width:700px;
+}
+
+
+/****************************Values***************************************************/
+
+
+.labelB_3 { /*username value*/
+    position:absolute;
+    left:400px;
+    top:5px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelD_3 { /*first name value*/
+    position:absolute;
+    left:400px;
+    top:65px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelF_3 { /*last name value*/
+    position:absolute;
+    left:400px;
+    top:125px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelH_3 { /*designation value*/
+    position:absolute;
+    left:400px;
+    top:185px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelJ_3 { /*Company Name value*/
+    position:absolute;
+    left:400px;
+    top:245px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+
+
+
+
+.labelL_3 { /*Email ID */
+    position:absolute;
+    left:400px;
+    top:305px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelN_3 { /*State */
+    position:absolute;
+    left:400px;
+    top:365px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelP_3 { /*City */
+    position:absolute;
+    left:400px;
+    top:425px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelR_3 { /*Industry */
+    position:absolute;
+    left:400px;
+    top:485px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelT_3 { /*Contact Number */
+    position:absolute;
+    left:400px;
+    top:545px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelV_3 { /*Member Since */
+    position:absolute;
+    left:400px;
+    top:605px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+}

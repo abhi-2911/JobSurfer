@@ -1,0 +1,360 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*Box*/
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 450px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+    overflow: scroll;
+}
+
+.labelA_3{/*Role label*/
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlA_3{/*Role dropdownlist*/
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    width:200px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+
+.labelB_3{/*Job Title label*/
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxA_3{/*Job Title textbox*/
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelC_3{/*Job Description label*/
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxB_3{/*Job Description textbox*/
+    position: absolute;
+    top: 320px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelD_3{/*Education label*/
+    position: absolute;
+    top: 420px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlB_3{/*Education dropdownlist*/
+    position: absolute;
+    top: 470px;
+    left: 5px;
+    width:200px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+
+.labelE_3{/* salary label*/
+    position: absolute;
+    top: 540px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlC_3{/* salary lakhs dropdownlist*/
+    position: absolute;
+    top: 590px;
+    left: 10px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlD_3{/* salary thousands dropdownlist*/
+    position: absolute;
+    top: 590px;
+    left: 200px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+
+.labelF_3{/*Vacancy label*/
+    position: absolute;
+    top: 660px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxC_3{/*Vacancy textbox*/
+    position: absolute;
+    top: 710px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelG_3{/*Interview Dates label*/
+    position: absolute;
+    top: 780px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.labelH_3{/*From label*/
+    position: absolute;
+    top: 830px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlE_3{/* From_day dropdownlist*/
+    position: absolute;
+    top: 880px;
+    left: 5px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlF_3{/* From_month dropdownlist*/
+    position: absolute;
+    top: 880px;
+    left: 170px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlG_3{/* From_year dropdownlist*/
+    position: absolute;
+    top: 880px;
+    left: 335px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+
+
+.labelI_3{/*to label*/
+    position: absolute;
+    top: 930px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlH_3{/* to_day dropdownlist*/
+    position: absolute;
+    top: 980px;
+    left: 5px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlI_3{/* to_month dropdownlist*/
+    position: absolute;
+    top: 980px;
+    left: 170px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlJ_3{/* to_year dropdownlist*/
+    position: absolute;
+    top: 980px;
+    left: 335px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+
+.hrA_3{  /*horizontal line before button*/
+    position:absolute;
+    top:1030px;
+    right:5px;
+    width:575px;
+}
+
+.buttonA_3{/*Post Job button*/
+    position: absolute;
+    left: 10px;
+    top: 1080px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonA_3:hover{/*Post Job button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+.labelJ_3 {/*Job Posted success label*/
+    position: absolute;
+    top: 1090px;
+    right: 200px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hrB_3{  /*horizontal line after button*/
+    position:absolute;
+    top:1140px;
+    right:5px;
+    width:575px;
+}
+
+/****************************************Required Feild Validations******************************************************/
+
+.rfvA_3 { /*role*/
+    position: absolute;
+    top: 90px;
+    right: 350px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvB_3 { /*Job Title*/
+    position: absolute;
+    top: 210px;
+    right: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvC_3 { /*Job Description*/
+    position: absolute;
+    top: 350px;
+    right: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvD_3 { /*Education*/
+    position: absolute;
+    top: 480px;
+    right: 350px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvE_3 { /*Salary_Lakh*/
+    position: absolute;
+    top: 600px;
+    right: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvF_3 { /*Salary_Thousand*/
+    position: absolute;
+    top: 600px;
+    right: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvG_3 { /*Vacancy*/
+    position: absolute;
+    top: 720px;
+    right: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvH_3 { /*Interview Dates From_day*/
+    position: absolute;
+    top: 890px;
+    right: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvI_3 { /*Interview Dates From_month*/
+    position: absolute;
+    top: 890px;
+    right: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvJ_3 { /*Interview Dates From_year*/
+    position: absolute;
+    top: 890px;
+    right: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvK_3 { /*Interview Dates To_day*/
+    position: absolute;
+    top: 990px;
+    right: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvL_3 { /*Interview Dates To_month*/
+    position: absolute;
+    top: 990px;
+    right: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvM_3 { /*Interview Dates To_year*/
+    position: absolute;
+    top: 990px;
+    right: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}

@@ -1,0 +1,65 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 300px;
+    width: 700px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.labelA_3{/*Select to delete label*/
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.ddlA_3{/*Job ID dropdownlist*/
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    width:200px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.rfvA_3 { /* Job ID required feild validator*/
+    position: absolute;
+    top: 130px;
+    right: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.buttonA_3{/*delete button*/
+    position: absolute;
+    left: 265px;
+    top: 200px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonA_3:hover{/*delete button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+.vsumA_3{
+    position:absolute;
+    bottom:5px;
+    left:5px;
+}

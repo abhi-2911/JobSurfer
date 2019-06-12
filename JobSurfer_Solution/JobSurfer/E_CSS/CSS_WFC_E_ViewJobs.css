@@ -1,0 +1,74 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 450px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.gvA_3 { /*grid view*/
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 500px;
+    height: 150px;
+}
+
+.gv_header { /*grideview header */
+    font-family: Arial;
+}
+
+.job_id { /*job id*/
+    font-family: Arial;
+    font-size: 15px;
+}
+
+    .job_id:hover { /*job id hover*/
+        color: chocolate;
+    }
+
+.job_title { /*job title*/
+    font-family: Arial;
+    font-size: 15px;
+}
+
+    .job_title:hover { /*job title hover*/
+        color: chocolate;
+    }
+
+.button_css { /*gridview button to view jobs*/
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .button_css:hover { /*gridview button to view jobs hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonB_3 { /*Post Jobs button*/
+    position: absolute;
+    left: 220px;
+    top: 150px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*Post Jobs button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }

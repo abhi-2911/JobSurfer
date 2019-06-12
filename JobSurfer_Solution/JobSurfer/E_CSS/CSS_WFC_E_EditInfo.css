@@ -1,0 +1,325 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*Box*/
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 450px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+    overflow: scroll;
+}
+
+/*******************************Label and textbox : label&textbox:50px  textbox&label:70px*********************************/
+
+.labelA_3 { /*State*/
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.ddlA_3 { /*DropDownList State */
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    width: 310px;
+    height: 40px;
+    background-color: gainsboro;
+    font-size: 18px;
+}
+
+.labelB_3 { /*City*/
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.ddlB_3 { /*DropDownList City */
+    position: absolute;
+    top: 190px;
+    left: 5px;
+    width: 310px;
+    height: 40px;
+    background-color: gainsboro;
+    font-size: 18px;
+}
+
+.labelC_3 { /*First Name label*/
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxA_3 { /*First Name textbox*/
+    position: absolute;
+    top: 310px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+.labelD_3 { /*Last Name label*/
+    position: absolute;
+    top: 380px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxB_3 { /*Last Name textbox*/
+    position: absolute;
+    top: 430px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+.labelE_3 { /*Designation label*/
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxC_3 { /*Designation textbox*/
+    position: absolute;
+    top: 550px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+
+.labelF_3 { /*Email Id label*/
+    position: absolute;
+    top: 620px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxD_3 { /*Email Id textbox*/
+    position: absolute;
+    top: 670px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+
+.labelG_3 { /*Contact Number label*/
+    position: absolute;
+    top: 740px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxE_3 { /*Contact Number textbox*/
+    position: absolute;
+    top: 790px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+#divA1_3 hr { /*hr tag*/
+    position: absolute;
+    top: 850px;
+    right: 5px;
+    width: 575px;
+}
+
+.buttonA_3 { /*update button*/
+    position: absolute;
+    top: 900px;
+    right: 245px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*update button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonB_3 { /*Profile button*/
+    position: absolute;
+    top: 900px;
+    right: 245px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*Profile button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.labelH_3 { /*success label*/
+    position: absolute;
+    top: 910px;
+    right: 90px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+/*******************************Required feild validators ******************************************/
+
+.rfvA_3 { /*select state*/
+    position: absolute;
+    right: 240px;
+    top: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvB_3 { /*select city*/
+    position: absolute;
+    right: 240px;
+    top: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvC_3 { /*first Name*/
+    position: absolute;
+    right: 220px;
+    top: 320px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvD_3 { /*last Name*/
+    position: absolute;
+    right: 220px;
+    top: 440px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvE_3 { /*designation*/
+    position: absolute;
+    right: 220px;
+    top: 560px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvF_3 { /*email id*/
+    position: absolute;
+    right: 220px;
+    top: 680px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.rfvG_3 { /*contact number*/
+    position: absolute;
+    right: 220px;
+    top: 800px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/*******************************Regular expression validators ******************************************/
+
+.revA_3 { /*first Name*/
+    position: absolute;
+    right: 220px;
+    top: 320px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revB_3 { /*last Name*/
+    position: absolute;
+    right: 220px;
+    top: 440px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revC_3 { /*designation*/
+    position: absolute;
+    right: 220px;
+    top: 560px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revD_3 { /*email id*/
+    position: absolute;
+    right: 220px;
+    top: 680px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revE_3 { /*contact number*/
+    position: absolute;
+    right: 220px;
+    top: 800px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/*******************************Validation summary******************************************/
+
+.vsumA_3 {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
