@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Site_2.master.cs" Inherits="JobSurfer.U_MasterPage.Master_Site_2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>***Master User***</title>
+
+    <link href="../U_CSS/CSS_M_Site_2.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="divA_1">
+            <!--header of master page-->
+
+            <img id="imgA_1" src="../U_Images/Banner.jpg" />
+
+        </div>
+
+        <div id="divB_1">
+            <!--sidebar of the master page-->
+            <!--buttons from A to M 13-->
+
+            <asp:Button CssClass="button_css_1" ID="buttonA1_1" runat="server" Text="Profile" PostBackUrl="~/User/U_ProfilePage.aspx" CausesValidation="False" />
+            <asp:Button CssClass="button_css_1" ID="buttonB1_1" runat="server" Text="Job Search" CausesValidation="False" PostBackUrl="~/User/U_JobSearch.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonC1_1" runat="server" Text="Applied Jobs" CausesValidation="False" PostBackUrl="~/User/U_AppliedJobs.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonD1_1" runat="server" Text="Upload Resume" CausesValidation="False" PostBackUrl="~/User/U_UploadResume.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonE1_1" runat="server" Text="View Resume" CausesValidation="False" PostBackUrl="~/User/U_ViewResume.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonG1_1" runat="server" Text="Edit Info" CausesValidation="False" PostBackUrl="~/User/U_EditInfo.aspx" />
+            <%--<asp:Button CssClass="button_css_1" ID="buttonL1_1" runat="server" Text="View Info" CausesValidation="false" />--%>
+            <asp:Button CssClass="button_css_1" ID="buttonJ1_1" runat="server" Text="Add Video Resume" CausesValidation="false" PostBackUrl="~/User/U_AddVideoResume.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonK1_1" runat="server" Text="View Video Resume" CausesValidation="false" PostBackUrl="~/User/U_ViewVideoResume.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonF1_1" runat="server" Text="Resources" CausesValidation="False" PostBackUrl="~/User/U_Resource_V_D.aspx" />
+            <asp:Button CssClass="button_css_1" ID="buttonM1_1" runat="server" Text="Change Profile Pic" PostBackUrl="~/User/U_ChangeProfilePic.aspx" CausesValidation="false" />
+            <asp:Button CssClass="button_css_1" ID="buttonH1_1" runat="server" Text="Change Password" PostBackUrl="~/User/U_ChangePassword.aspx" CausesValidation="False" />
+            <asp:Button CssClass="button_css_1" ID="buttonI1_1" runat="server" Text="Logout" OnClick="buttonI1_1_Click" CausesValidation="False" />
+
+
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="divC_1">
+            <!--footer of the master page-->
+            <a id="aA_1" target="_blank" href="https://www.linkedin.com/jobsurfer">
+                <img class="imgD_1" id="imgD1_1" src="../U_Images/ico_linkedIn.png" /></a>
+            <a id="aB_1" target="_blank" href="https://www.googleplus.com/jobsurfer">
+                <img class="imgE_1" id="imgE1_1" src="../U_Images/ico_googleplus.png" /></a>
+            <a id="aC_1" target="_blank" href="https://www.facebook.com/jobsurfer">
+                <img class="imgF_1" id="imgF1_1" src="../U_Images/ico_facebook.png" /></a>
+            <a id="aD_1" target="_blank" href="https://www.youtube.com/jobsurfer">
+                <img class="imgG_1" id="imgG1_1" src="../U_Images/ico_youtube.png" /></a>
+            <a id="aE_1" target="_blank" href="https://www.twitter.com/jobsurfer">
+                <img class="imgH_1" id="imgH1_1" src="../U_Images/ico_twitter.png" /></a>
+            <a id="aF_1" target="_blank" href="https://www.instagram.com/jobsurfer">
+                <img class="imgI_1" id="imgI1_1" src="../U_Images/ico_instagram.png" /></a>
+
+            <asp:Image CssClass="imageJ_1" ID="imageJ1_1" runat="server" ImageUrl="~/U_Images/JobSurfer_Logo.png" /><!--jobsurfer logo-->
+
+            <asp:ScriptManager ID="scriptmA_1" runat="server"></asp:ScriptManager>
+            <asp:UpdatePanel ID="updatepA_1" runat="server">
+                <ContentTemplate>
+                    <asp:Label ID="labelA_1" runat="server" Text=""></asp:Label>
+                    <asp:Timer ID="timerA_1" runat="server" Interval="1000" OnTick="timerA_1_Tick"></asp:Timer>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+
+    </form>
+</body>
+</html>
