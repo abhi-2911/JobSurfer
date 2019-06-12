@@ -2,7 +2,7 @@
 
 Online Job Portal called : JobSurfer , a project submitted to YCMOU for the fulfillment of the requirements of Bachelor of Computer Apllication Graduation Degree .
 
-Demo Video : <a target="_blank" href="https://youtu.be/TmliZHj7ivc">Link</a>
+<!--Demo Video : <a target="_blank" href="https://youtu.be/TmliZHj7ivc">Link</a>-->
 
 ## Documentation
 
@@ -61,7 +61,6 @@ Project Report Book : <a target="_blank" href="https://github.com/abhi-2911/JobS
 
 <img src="ScreenShots/Website/Screenshot (70).png" height="400" width="600">
 
- 
 <img src="ScreenShots/JobSeeker/Screenshot (103).png" height="400" width="600">
 
 <img src="ScreenShots/Website/Screenshot (78).png" height="400" width="600">
