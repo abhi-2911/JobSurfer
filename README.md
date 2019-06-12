@@ -1,4 +1,4 @@
-# JobSurfer Project Sem 6
+# JobSurfer
 
 Online Job Portal called : JobSurfer , a project submitted to YCMOU for the fulfillment of the requirements of Bachelor of Computer Apllication Graduation Degree .
 
