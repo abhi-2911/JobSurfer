@@ -1,0 +1,115 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA_3 img { /*image*/
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 430px;
+    width: 1340px;
+}
+
+.pA_3 { /*employer login*/
+    position: absolute;
+    top: 170px;
+    left: 15px;
+    color: white;
+    opacity:0.9;
+    font-size: 30px;
+    font-family: Arial;
+    text-shadow: 2px 2px 2px #000000;
+    background-color: #3065e2;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+#divB_3 { /*Box*/
+    position: absolute;
+    top: 250px;
+    right: 400px;
+    height: 250px;
+    width: 500px;
+    background-color: darkgray;
+    opacity: 0.9;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px #6f6d6d;
+}
+
+.labelA_3 {/*username*/
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxA_3 {/*username textbox*/
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+.rfvA_3{ /*username validation*/
+    position:absolute;
+    right:140px;
+    top:60px;
+    font-size:30px;
+    text-shadow:2px 2px 2px white;
+}
+
+.rfvB_3{ /*password validation*/
+    position:absolute;
+    right:140px;
+    top:160px;
+    font-size:30px;
+    text-shadow:2px 2px 2px white;
+}
+
+
+.labelB_3 { /*password*/
+    position: absolute;
+    top: 110px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxB_3 { /*password textbox*/
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+}
+
+.buttonA_3 { /*login button*/
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width:170px;
+    background-color: lightblue;
+}
+
+.buttonA_3:hover{ /*login button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.vsumA_3{ /*validation summary*/
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}

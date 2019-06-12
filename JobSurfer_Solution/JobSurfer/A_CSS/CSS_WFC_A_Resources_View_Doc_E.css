@@ -1,0 +1,58 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 185px;
+    right: 350px;
+    border: 3px solid gray;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.gvA_3 { /*grid view*/
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 500px;
+    height: 100px;
+}
+.gv_header { /*grideview header */
+    font-family: Arial;
+    height: 40px;
+}
+.title_css { /*notification subject */
+    font-family: Arial;
+    font-size: 15px;
+}
+
+    .title_css:hover { /*notification subject hover*/
+        color: chocolate;
+    }
+
+.id_css { /*notification subject */
+    font-family: Arial;
+    font-size: 15px;
+}
+
+    .id_css:hover { /*notification subject hover*/
+        color: chocolate;
+    }
+
+
+.button_css { /*open button*/
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .button_css:hover { /*open button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }

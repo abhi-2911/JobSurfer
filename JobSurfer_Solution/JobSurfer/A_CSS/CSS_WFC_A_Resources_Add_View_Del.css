@@ -1,0 +1,80 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 185px;
+    right: 350px;
+    height: 300px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    border: 3px solid gray;
+    box-shadow: 2px 2px 5px black;
+}
+
+.buttonA_3 { /*Add button*/
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*Add button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrA1_3 { /*horizontal one*/
+    position: absolute;
+    top: 90px;
+    width: 575px;
+    left: 10px;
+}
+
+.buttonB_3 { /*View button*/
+    position: absolute;
+    left: 200px;
+    top: 120px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*View button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrB1_3 { /*horizontal two */
+    position: absolute;
+    top: 190px;
+    width: 575px;
+    left: 10px;
+}
+
+
+
+.buttonC_3 { /*Delete button*/
+    position: absolute;
+    left: 200px;
+    top: 230px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonC_3:hover { /*Delete button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }

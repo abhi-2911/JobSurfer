@@ -1,0 +1,82 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA_3 { /*box*/   /*40px gap between label & textbox*/  /*50px gap between textbox & label*/
+    position: absolute;
+    top: 185px;
+    right: 350px;
+    border: 3px solid gray;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.labelA_3 { /*User Name label*/
+    position: absolute;     
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxA_3 { /*User Name textbox*/
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 25px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    width:300px;
+}
+
+.labelB_3 { /*Subject label*/
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxB_3 { /*Subject textbox*/
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-size: 25px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    width:300px;
+}
+
+.labelC_3 { /*Message label*/
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxC_3 { /*Message textbox*/
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    font-size: 25px;
+    background-color: gainsboro;
+    width:300px;
+    height:120px;
+}

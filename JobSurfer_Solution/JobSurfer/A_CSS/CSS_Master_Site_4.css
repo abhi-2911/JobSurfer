@@ -1,0 +1,141 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #e8e8e8;
+}
+
+#divA_1 { /*title div*/
+    height: 100px;
+    width: auto;
+    background-color: #cbcbcb;
+    border: solid 2px black;
+    position: relative;
+    cursor: pointer;
+}
+
+#imgA_1 { /*title image one*/
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    height: 80px;
+    width: 1345px;
+    box-shadow: 0px 0px 9px black;
+}
+
+
+#divB_1 { /*navbar*/
+    position: absolute;
+    height: 60px;
+    top: 104px;
+    background-color: #808080;
+    width: 1366px;
+}
+
+.buttonA_1 { /*Admin button*/
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    height: 50px;
+    width: 100px;
+    color:white;
+    text-shadow:1px 1px 3px black;
+    font-family:'Lucida Console';
+    font-size: 18px;
+    background-color: #b9b9b9;
+    border-radius:30px 30px 0px 0px;
+}
+
+    .buttonA_1:hover {   /*Admin button hover*/
+        background-color: lightsalmon;
+        color: black;
+        text-shadow:1px 1px 2px white;
+    }
+
+.buttonB_1{   /*back button hover*/
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    height: 50px;
+    width: 100px;
+    color:white;
+    text-shadow:1px 1px 3px black;
+    font-family:'Lucida Console';
+    font-size: 18px;
+    background-color: #b9b9b9;
+    border-radius:30px 0px 0px 30px;
+}
+
+    .buttonB_1:hover {   /*back button hover*/
+        background-color: lightsalmon;
+        color: black;
+        text-shadow:1px 1px 2px white;
+    }
+
+.labelB_1 {   /*admin panel label*/
+    position:absolute;
+    top:4px;
+    left:600px;
+    font-family:Arial;
+    font-size:35px;
+    color:white;
+    text-shadow:1px 1px 2px #e8e8e8;
+    border-bottom:2px solid #1200ff;
+}
+
+
+#divC_1 { /*Footer*/
+    position: absolute;
+    display: block;
+    bottom: 3px;
+    left: 5px;
+    height: 60px;
+    width: 1350px;
+    border: 2px solid black;
+    background-color: #808080;
+}
+
+
+    #divC_1 img { /*social links*/
+        position: relative;
+        top: 10px;
+        left: 20px;
+        height: 40px;
+        width: 40px;
+        box-shadow: 2px 2px 2px #718eff;
+    }
+
+        #divC_1 img:hover { /*social links*/
+            box-shadow: 2px 2px 2px #e8e8e8;
+        }
+
+    #divC_1 a { /*social links*/
+        padding-right: 35px;
+    }
+
+    #divC_1 .imageJ_1 { /*josurfer logo*/
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 600px;
+        height: 35px;
+        width: 250px;
+        box-shadow: 1px 1px 10px #808080;
+    }
+
+        #divC_1 .imageJ_1:hover { /*josurfer logo hover effect*/
+            box-shadow: 1px 1px 10px white;
+            cursor: pointer;
+        }
+
+
+#labelA_1 { /*time label*/
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 18px;
+    font-family: Arial;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 20px;
+    cursor: pointer;
+}

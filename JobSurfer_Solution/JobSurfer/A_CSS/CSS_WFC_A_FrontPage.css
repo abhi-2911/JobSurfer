@@ -1,0 +1,197 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 185px;
+    right: 350px;
+    border: 3px solid gray;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+    overflow-y:scroll;
+}
+
+.buttonA_3 { /*resources button*/
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*resources button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrA1_3 { /*horizontal one*/
+    position: absolute;
+    top: 80px;
+    width: 575px;
+    left: 10px;
+}
+
+.buttonB_3 { /*list button*/
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*list button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrB1_3 { /*horizontal two*/
+    position: absolute;
+    top: 150px;
+    width: 575px;
+    left: 10px;
+}
+
+.buttonC_3 { /*search button*/
+    position: absolute;
+    left: 200px;
+    top: 170px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonC_3:hover { /*search button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrC1_3 { /*horizontal three*/
+    position: absolute;
+    top: 220px;
+    width: 575px;
+    left: 10px;
+}
+
+.buttonD_3 { /*Remove button*/
+    position: absolute;
+    left: 200px;
+    top: 240px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonD_3:hover { /*Remove button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrD1_3 { /*horizontal four*/
+    position: absolute;
+    top: 290px;
+    width: 575px;
+    left: 10px;
+}
+.buttonE_3 { /*Message button*/
+    position: absolute;
+    left: 200px;
+    top: 310px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonE_3:hover { /*Message button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrE1_3 { /*horizontal five*/
+    position: absolute;
+    top: 360px;
+    width: 575px;
+    left: 10px;
+}
+.buttonF_3 { /*Notification button*/
+    position: absolute;
+    left: 200px;
+    top: 380px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonF_3:hover { /*Notification button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrF1_3 { /*horizontal six*/
+    position: absolute;
+    top: 430px;
+    width: 575px;
+    left: 10px;
+}
+.buttonG_3 { /*Update Password button*/
+    position: absolute;
+    left: 200px;
+    top: 450px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonG_3:hover { /*Update Password button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrG1_3 { /*horizontal seven*/
+    position: absolute;
+    top: 500px;
+    width: 575px;
+    left: 10px;
+}
+.buttonH_3 { /*Logout button*/
+    position: absolute;
+    left: 200px;
+    top: 520px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonH_3:hover { /*Logout button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#divA1_3 #hrH1_3 { /*horizontal eight*/
+    position: absolute;
+    top: 570px;
+    width: 575px;
+    left: 10px;
+}

@@ -1,0 +1,146 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA_3 { /*box*/   /*40px gap between label & textbox*/  /*50px gap between textbox & label*/
+    position: absolute;
+    top: 185px;
+    right: 350px;
+    border: 3px solid gray;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.labelA_3 { /*User Name label*/
+    position: absolute;     
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxA_3 { /*User Name textbox*/
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 25px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    width:300px;
+}
+
+.rfvA_3 { /*required feild validator User Name textbox*/
+    position: absolute;
+    right: 250px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.cvA_3{   /*custom feild validator User Name textbox*/
+    position: absolute;
+    right: 250px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelB_3 { /*Subject label*/
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxB_3 { /*Subject textbox*/
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-size: 25px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    width:300px;
+}
+
+.rfvB_3 { /*required feild validator Subject textbox*/
+    position: absolute;
+    right: 250px;
+    top: 150px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelC_3 { /*Message label*/
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxC_3 { /*Message textbox*/
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    font-size: 25px;
+    background-color: gainsboro;
+    width:300px;
+    height:80px;
+}
+
+.rfvC_3 { /*required feild validator Message textbox*/
+    position: absolute;
+    right: 250px;
+    top: 250px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.buttonA_3 { /*Send Message button*/
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 170px;
+    height: 30px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*Send Message button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.labelD_3 { /*success label*/
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.vsumA_3 { /*validation summary*/
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}

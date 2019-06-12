@@ -1,0 +1,272 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 185px;
+    right: 250px;
+    height: 420px;
+    width: 850px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    border: 3px solid gray;
+    box-shadow: 2px 2px 5px black;
+    overflow: scroll;
+}
+
+.imageA_3 { /*employer profile pic*/
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    box-shadow: black 2px 2px 5px;
+    height: 150px;
+    width: 150px;
+}
+
+#divA1_3 #pA1_3 { /*Employer detail page p_tag*/
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelA_3 { /*first name label*/
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelA_3 { /*first name label value*/
+    position: absolute;
+    top: 130px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+
+.labelB_3 { /*last name label*/
+    position: absolute;
+    top: 180px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelB_3 { /*last name label value*/
+    position: absolute;
+    top: 180px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+.labelC_3 { /*Designation label*/
+    position: absolute;
+    top: 230px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelC_3 { /*Designation label value*/
+    position: absolute;
+    top: 230px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+.labelD_3 { /*Company Name label*/
+    position: absolute;
+    top: 280px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelD_3 { /*Company Name label value*/
+    position: absolute;
+    top: 280px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+.labelE_3 { /*Email ID label*/
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelE_3 { /*Email ID label value*/
+    position: absolute;
+    top: 330px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+.labelF_3 { /*State label*/
+    position: absolute;
+    top: 380px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelF_3 { /*State label value*/
+    position: absolute;
+    top: 380px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+.labelG_3 { /*City label*/
+    position: absolute;
+    top: 430px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelG_3 { /*City label value*/
+    position: absolute;
+    top: 430px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+.labelH_3 { /*Industry label*/
+    position: absolute;
+    top: 480px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelH_3 { /*Industry label value*/
+    position: absolute;
+    top: 480px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelI_3 { /*Address label*/
+    position: absolute;
+    top: 530px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+.textboxI_3 { /*Address label value*/
+    position: absolute;
+    top: 560px;
+    left: 300px;
+    height: 100px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightsteelblue;
+    color: white;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelJ_3 { /*Contact Number label*/
+    position: absolute;
+    top: 710px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelJ_3 { /*Contact Number label value*/
+    position: absolute;
+    top: 710px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrA1_3 { /*horizontal line 1*/
+    position: absolute;
+    top: 760px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #hrB1_3 { /*horizontal line 2*/
+    position: absolute;
+    top: 810px;
+    left: 20px;
+    width: 790px;
+}

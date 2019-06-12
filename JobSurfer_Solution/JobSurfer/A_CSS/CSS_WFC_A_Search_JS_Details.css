@@ -1,0 +1,884 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 185px;
+    right: 250px;
+    height: 420px;
+    width: 850px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    border: 3px solid gray;
+    box-shadow: 2px 2px 5px black;
+    overflow: scroll;
+}
+
+.imageA_3 { /*jobseeker profile pic*/
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    box-shadow: black 2px 2px 5px;
+    height: 150px;
+    width: 150px;
+}
+
+.buttonResumeA_3 { /*resume button*/
+    position: absolute;
+    top: 265px;
+    left: 32px;
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+.buttonResumeA_3:hover{   /*resume button hover*/
+    background-color:lightsalmon;
+    color:white;
+}
+
+.buttonVideoResumeA_3 { /*Video resume button*/
+    position: absolute;
+    top: 295px;
+    left: 32px;
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+.buttonVideoResumeA_3:hover{   /*Video resume button hover*/
+    background-color:lightsalmon;
+    color:white;
+}
+
+#divA1_3 #pA1_3 { /*jobseeker detail page p_tag*/
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelA_3 { /*first name label*/
+    position: absolute;
+    top: 130px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelA_3 { /*first name label value*/
+    position: absolute;
+    top: 130px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelB_3 { /*last name label*/
+    position: absolute;
+    top: 180px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelB_3 { /*last name label value*/
+    position: absolute;
+    top: 180px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelC_3 { /*Email ID label*/
+    position: absolute;
+    top: 230px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelC_3 { /*Email ID label value*/
+    position: absolute;
+    top: 230px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelD_3 { /*Contact Detail label*/
+    position: absolute;
+    top: 280px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelD_3 { /*Contact Detail label value*/
+    position: absolute;
+    top: 280px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrA1_3 { /*horizontal line 1*/
+    position: absolute;
+    top: 330px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #pB1_3 { /*employment details p_tag*/
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 150px;
+    padding-right: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelE_3 { /*Designation Detail label*/
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelE_3 { /*Designation Detail label value*/
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelF_3 { /*Organization Detail label*/
+    position: absolute;
+    top: 550px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelF_3 { /*Organization Detail label value*/
+    position: absolute;
+    top: 550px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelG_3 { /*Current Company Detail label*/
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelG_3 { /*Current Company Detail label value*/
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrB1_3 { /*horizontal line 2*/
+    position: absolute;
+    top: 650px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #pC1_3 { /*project details p_tag*/
+    position: absolute;
+    top: 680px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 210px;
+    padding-right: 230px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelH_3 { /*project title Detail label*/
+    position: absolute;
+    top: 830px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelH_3 { /*project title label value*/
+    position: absolute;
+    top: 830px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelI_3 { /*Project of Detail label*/
+    position: absolute;
+    top: 880px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelI_3 { /*Project of label value*/
+    position: absolute;
+    top: 880px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelJ_3 { /*Status Detail label*/
+    position: absolute;
+    top: 930px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelJ_3 { /*Status label value*/
+    position: absolute;
+    top: 930px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelK_3 { /*Description Detail label*/
+    position: absolute;
+    top: 980px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxK_3 { /*Description label value*/
+    position: absolute;
+    top: 1010px;
+    left: 300px;
+    height: 100px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightsteelblue;
+    color: white;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrC1_3 { /*horizontal line 3*/
+    position: absolute;
+    top: 1160px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #pD1_3 { /*Online Profile details p_tag*/
+    position: absolute;
+    top: 1190px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 160px;
+    padding-right: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelL_3 { /*Social Profile Detail label*/
+    position: absolute;
+    top: 1350px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelL_3 { /*Social Profile label value*/
+    position: absolute;
+    top: 1350px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelM_3 { /*URL Detail label*/
+    position: absolute;
+    top: 1400px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.buttonM_3 { /*URL  button*/
+    position: absolute;
+    top: 1400px;
+    left: 500px;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+.buttonM_3:hover{   /*URL button hover*/
+    background-color:lightsalmon;
+    color:white;
+}
+
+.labelN_3 { /*Description Detail label*/
+    position: absolute;
+    top: 1450px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxN_3 { /*Description textbox value*/
+    position: absolute;
+    top: 1480px;
+    left: 300px;
+    height: 100px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightsteelblue;
+    color: white;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrD1_3 { /*horizontal line 4*/
+    position: absolute;
+    top: 1630px;
+    left: 20px;
+    width: 790px;
+}
+
+
+#divA1_3 #pE1_3 { /*Certification  p_tag*/
+    position: absolute;
+    top: 1660px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 180px;
+    padding-right: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelO_3 { /*Certification Name Detail label*/
+    position: absolute;
+    top: 1810px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelO_3 { /*Certification Name label value*/
+    position: absolute;
+    top: 1810px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelP_3 { /*Institute Detail label*/
+    position: absolute;
+    top: 1860px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelP_3 { /*Institute label value*/
+    position: absolute;
+    top: 1860px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelQ_3 { /*Year label*/
+    position: absolute;
+    top: 1910px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelQ_3 { /*Year label value*/
+    position: absolute;
+    top: 1910px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrE1_3 { /*horizontal line 5*/
+    position: absolute;
+    top: 1960px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #pF1_3 { /*Personal Details  p_tag*/
+    position: absolute;
+    top: 2010px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 160px;
+    padding-right: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelR_3 { /*DOB label*/
+    position: absolute;
+    top: 2150px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuedayR_3 { /*DOB label day_value*/
+    position: absolute;
+    top: 2150px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.valuemonthR_3 { /*DOB label month_value*/
+    position: absolute;
+    top: 2150px;
+    left: 550px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.valueyearR_3 { /*DOB label year_value*/
+    position: absolute;
+    top: 2150px;
+    left: 600px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelS_3 { /*Gender label*/
+    position: absolute;
+    top: 2200px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelS_3 { /*Gender label value*/
+    position: absolute;
+    top: 2200px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelT_3 { /*State label*/
+    position: absolute;
+    top: 2250px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelT_3 { /*State label value*/
+    position: absolute;
+    top: 2250px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelU_3 { /*city label*/
+    position: absolute;
+    top: 2300px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelU_3 { /*city label value*/
+    position: absolute;
+    top: 2300px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelV_3 { /*HomeTown label*/
+    position: absolute;
+    top: 2350px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelV_3 { /*HomeTown label value*/
+    position: absolute;
+    top: 2350px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelW_3 { /*Pincode label*/
+    position: absolute;
+    top: 2400px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelW_3 { /*Pincode label value*/
+    position: absolute;
+    top: 2400px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelX_3 { /*Marital Status label*/
+    position: absolute;
+    top: 2450px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelX_3 { /*Marital Status label value*/
+    position: absolute;
+    top: 2450px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrF1_3 { /*horizontal line 6*/
+    position: absolute;
+    top: 2500px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #pG1_3 { /*Education  p_tag*/
+    position: absolute;
+    top: 2550px;
+    right: 100px;
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    background-color: darkblue;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.labelY_3 { /*Qualification label*/
+    position: absolute;
+    top: 2690px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelY_3 { /*Qualification label value*/
+    position: absolute;
+    top: 2690px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelZ_3 { /*Course Name label*/
+    position: absolute;
+    top: 2740px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelZ_3 { /*Course Name label value*/
+    position: absolute;
+    top: 2740px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelAA_3 { /*College Name label*/
+    position: absolute;
+    top: 2790px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelAA_3 { /*College Name label value*/
+    position: absolute;
+    top: 2790px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelAB_3 { /*University label*/
+    position: absolute;
+    top: 2840px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelAB_3 { /*University label value*/
+    position: absolute;
+    top: 2840px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelAC_3 { /*Percentage label*/
+    position: absolute;
+    top: 2890px;
+    left: 300px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.valuelabelAC_3 { /*Percentage label value*/
+    position: absolute;
+    top: 2890px;
+    left: 500px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#divA1_3 #hrG1_3 { /*horizontal line 7*/
+    position: absolute;
+    top: 2940px;
+    left: 20px;
+    width: 790px;
+}
+
+#divA1_3 #hrH1_3 { /*horizontal line 8*/
+    position: absolute;
+    top: 2990px;
+    left: 20px;
+    width: 790px;
+}
