@@ -1,0 +1,197 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.imageA_3 { /*profile pic*/
+    border: 2px solid black;
+    position: absolute;
+    top: 110px;
+    left: 250px;
+    box-shadow: black 2px 2px 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.buttonMessage{/*Messages button*/
+    position: absolute;
+    left: 230px;
+    top: 400px;
+    width:250px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+    opacity:0.7;
+    border:inset #b4b4b4;
+}
+.buttonMessage:hover{/*Messages button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.buttonNotification{/*Notifications button*/
+    position: absolute;
+    left: 230px;
+    top: 460px;
+    width:250px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+    opacity:0.7;
+    border:inset #b4b4b4;
+}
+.buttonNotification:hover{ /*Notifications button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+
+#divA_3 { /*user name box*/
+    height: 90px;
+    width: 820px;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    border-bottom: 5px solid black;
+    box-shadow: 2px 2px 5px #808080;
+    background:linear-gradient(to bottom,#59a5ff,#d1d5ff);
+    opacity:0.6;
+}
+
+
+.pA_3 { /*user name box text*/
+    position:absolute;
+    left:220px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+    font-size: 35px;
+}
+
+#divB_3 { /*user info box*/
+    position: absolute;
+    right: 80px;
+    top: 240px;
+    height: 350px;
+    width: 750px;
+    border: 3px solid gray;
+    background:linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity:0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.labelA_3 { /*username */ /*gap between is px  -----------------------------------------------------*/
+    position:absolute;
+    left:150px;
+    top:5px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelB_3 { /*username value*/
+    position:absolute;
+    left:400px;
+    top:5px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelC_3 { /*first name */
+    position:absolute;
+    left:150px;
+    top:65px;
+    font-family:Arial;
+    font-size: 30px;
+   color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelD_3 { /*first name value*/
+    position:absolute;
+    left:400px;
+    top:65px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelE_3 { /*last name */
+    position:absolute;
+    left:150px;
+    top:125px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelF_3 { /*last name value*/
+    position:absolute;
+    left:400px;
+    top:125px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelG_3 { /*email id*/
+    position:absolute;
+    left:150px;
+    top:185px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelH_3 { /*email id value*/
+    position:absolute;
+    left:400px;
+    top:185px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelI_3 { /*contact detail*/
+    position:absolute;
+    left:150px;
+    top:245px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelJ_3 { /*contact detail value*/
+    position:absolute;
+    left:400px;
+    top:245px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}
+.labelK_3 { /*member since*/
+    position:absolute;
+    left:150px;
+    top:305px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    border-bottom:2px solid black;
+}
+.labelL_3 { /* member since value ---------------------------------------------------------------------*/
+    position:absolute;
+    left:400px;
+    top:305px;
+    font-family:Arial;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px black;
+}

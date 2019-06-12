@@ -1,0 +1,354 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA_3 img { /*image*/
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 430px;
+    width: 1340px;
+}
+
+.pA_3 { /*jobseeker register*/
+    position: absolute;
+    top: 170px;
+    left: 15px;
+    color: white;
+    opacity: 0.8;
+    font-size: 30px;
+    font-family: Arial;
+    text-shadow: 2px 2px 2px #000000;
+    background-color: #3065e2;
+    padding-left: 30px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+
+#divB_3 { /*Box*/
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    height: 400px;
+    width: 900px;
+    background-color: darkgray;
+    opacity: 0.9;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px #6f6d6d;
+    overflow: scroll;
+}
+
+.labelA_3 { /*username*/
+    position: absolute;
+    top: 10px; /*difference between label & textbox 40px*/ /*difference between textbox & label 60px*/
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxA_3 { /*username textbox*/
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvA_3 { /*username validation*/
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revA_3 { /*regular expression validator username*/
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+
+.cvA_3 { /*custom validation username textbox*/
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelB_3 { /*first name*/
+    position: absolute;
+    top: 110px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxB_3 { /*first name textbox*/
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvB_3 { /*first name validation*/
+    position: absolute;
+    left: 340px;
+    top: 160px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revB_3 { /*regular expression validator first name*/
+    position: absolute;
+    left: 340px;
+    top: 160px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelC_3 { /*last name*/
+    position: absolute;
+    top: 210px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxC_3 { /*last name textbox*/
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvC_3 { /*last name validation*/
+    position: absolute;
+    left: 340px;
+    top: 260px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revC_3 { /*regular expression validator last name*/
+    position: absolute;
+    left: 340px;
+    top: 260px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelD_3 { /*email id*/
+    position: absolute;
+    top: 310px;
+    left: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxD_3 { /*email id textbox*/
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvD_3 { /*email id validation*/
+    position: absolute;
+    left: 340px;
+    top: 360px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revD_3 { /*regular expression validator email id*/
+    position: absolute;
+    left: 340px;
+    top: 360px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelE_3 { /*contact detail*/
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxE_3 { /*contact detail textbox*/
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvE_3 { /*contact detail required feild validation*/
+    position: absolute;
+    right: 340px;
+    top: 60px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.revE_3 { /*contact detail regular expression validation*/
+    position: absolute;
+    right: 340px;
+    top: 60px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelF_3 { /*password*/
+    position: absolute;
+    top: 110px;
+    right: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxF_3 { /*password textbox*/
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvF_3 { /*password required feild validation*/
+    position: absolute;
+    right: 340px;
+    top: 160px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.cvB_3{/*password custom validation for min. 4 char*/
+    position: absolute;
+    right: 340px;
+    top: 160px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelG_3 { /*confirm password */
+    position: absolute;
+    top: 210px;
+    right: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.textboxG_3 { /*confirm password textbox*/
+    position: absolute;
+    top: 250px;
+    right: 0px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.rfvG_3 { /*confirm password required feild validation*/
+    position: absolute;
+    right: 340px;
+    top: 260px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.comparevA_3{/*confirm password compare validation*/
+    position: absolute;
+    right: 340px;
+    top: 260px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.labelH_3 { /*upload label*/
+    position: absolute;
+    top: 310px;
+    right: 5px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+
+.fileuploadA_3 { /*upload button*/
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    height: 40px;
+    width: 335px;
+}
+
+.rfvH_3 { /*upload button validation*/
+    position: absolute;
+    right: 340px;
+    top: 360px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.buttonA_3 { /*register button*/
+    position: absolute;
+    top: 450px;
+    right: 350px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*register button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonB_3 { /*login button,after successful registration*/
+    position: absolute;
+    top: 450px;
+    right: 360px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*login button hover,after successful registration*/
+        background-color: lightsalmon;
+        color: white;
+    }

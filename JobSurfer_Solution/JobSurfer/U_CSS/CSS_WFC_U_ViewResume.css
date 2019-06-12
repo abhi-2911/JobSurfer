@@ -1,0 +1,55 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 300px;
+    width: 700px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.imageA_3 { /*pdf logo*/
+    position: absolute;
+    top: 15px;
+    right: 280px;
+    height: 100px;
+    width: 130px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 7px black;
+}
+.linkbuttonA_3{ /*click to veiw linkbutton*/
+    position: absolute;
+    top: 180px;
+    right: 235px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+    border: solid 1px gray;
+    box-shadow: 1px 1px 5px gray;
+}
+.linkbuttonA_3:hover{/*click to veiw linkbutton*/
+        background-color: lightsalmon;
+        color: white;
+}
+.buttonA_3{ /*upload Resume button*/
+    position: absolute;
+    top: 180px;
+    right: 235px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+    border: solid 1px gray;
+    box-shadow: 1px 1px 5px gray;
+}
+.buttonA_3:hover{/*upload Resume button*/
+        background-color: lightsalmon;
+        color: white;
+}

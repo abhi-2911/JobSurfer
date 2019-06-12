@@ -1,0 +1,188 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+#divA_3{/*box*/
+    position:absolute;
+    top:120px;
+    right:250px;
+    border:3px solid gray;
+    height:450px;
+    width:600px;
+    background:linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity:0.7;
+    box-shadow:2px 2px 5px black;
+    overflow:scroll;
+}
+/******************label textbox button label*******************************/
+
+.labelA_3{/*first name label*/
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxA_3{/*first name textbox*/
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelB_3{/*last name label*/
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxB_3{/*last name textbox*/
+    position: absolute;
+    top: 190px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelC_3{/*email id label*/
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxC_3{/*email id textbox*/
+    position: absolute;
+    top: 310px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelD_3{/*contact number label*/
+    position: absolute;
+    top: 380px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxD_3{/*contact number textbox*/
+    position: absolute;
+    top: 430px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.buttonA_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 500px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonA_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.buttonB_3{/*profile button*/
+    position: absolute;
+    left: 10px;
+    top: 500px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonB_3:hover{/*profile button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.labelE_3{/*updated label*/
+    position:absolute;
+    top:510px;
+    right:60px;
+    font-family:Arial;
+    font-size:25px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+/******************required feild validators*******************************/
+
+.rfvA_3{/*required feild validator of first name*/
+    position: absolute;
+    left: 350px;
+    top: 80px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvB_3{/*required feild validator of last name*/
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvC_3{/*required feild validator of email id*/
+    position: absolute;
+    left: 350px;
+    top: 320px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+.rfvD_3{/*required feild validator of contact number*/
+    position: absolute;
+    left: 350px;
+    top: 440px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/******************regular expression validators*******************************/
+
+.revA_3{/*regular expression validator of first name*/
+    position: absolute;
+    left: 350px;
+    top: 80px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+.revB_3{/*regular expression validator of last name*/
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+.revC_3{/*regular expression validator of email id*/
+    position: absolute;
+    left: 350px;
+    top: 320px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}
+.revD_3{/*regular expression validator of contact number*/
+    position: absolute;
+    left: 350px;
+    top: 440px;
+    font-size: 20px;
+    color: #f15800;
+    text-shadow: 2px 2px 2px white;
+}

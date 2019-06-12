@@ -1,0 +1,81 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 450px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.imageA_3 { /*profile pic*/
+    border: 2px solid black;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    box-shadow: black 2px 2px 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.fileuploadA_3 { /*upload button*/
+    position: absolute;
+    top: 270px;
+    right: 130px;
+    height: 40px;
+    width: 335px;
+    font-family: Consolas;
+    font-size: 15px;
+}
+
+.rfvA_3 { /*upload button required feild validation*/
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.buttonA_3 { /*upload button*/
+    position: absolute;
+    top: 350px;
+    right: 215px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*upload button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonB_3 { /*profile button*/
+    position: absolute;
+    top: 350px;
+    right: 218px;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*profile button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+
+.vsA_3 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}

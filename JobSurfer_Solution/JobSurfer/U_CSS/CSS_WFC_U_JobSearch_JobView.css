@@ -1,0 +1,516 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/ /*label & value 30px , value & label 50px*/
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 450px;
+    width: 600px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+    overflow: scroll;
+}
+
+.labelA_3 { /*job title label*/
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: blue;
+    color: navajowhite;
+    text-shadow: 1px 1px 3px black;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.labelB_3 { /*company name label*/
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueB_3 { /*company name value label*/
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelC_3 { /*State name label*/
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueC_3 { /*state name value label*/
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelD_3 { /*city name label*/
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueD_3 { /*city name value label*/
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelE_3 { /*role label*/
+    position: absolute;
+    top: 310px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueE_3 { /*role value label*/
+    position: absolute;
+    top: 340px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelF_3 { /*education label*/
+    position: absolute;
+    top: 390px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueF_3 { /*education value label*/
+    position: absolute;
+    top: 420px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelG_3 { /*salary lakh label*/
+    position: absolute;
+    top: 470px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.lakhValueG_3 { /*salary lakh value label*/
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.thousandValueG_3 { /*salary thousand value label*/
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelH_3 { /*vacancy label*/
+    position: absolute;
+    top: 550px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueH_3 { /*vacancy value label*/
+    position: absolute;
+    top: 580px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelI_3 { /*Interview from label*/
+    position: absolute;
+    top: 630px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.fromDayI_3 { /*Interview from_day value label*/
+    position: absolute;
+    top: 660px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.fromMonthI_3 { /*Interview from_month value label*/
+    position: absolute;
+    top: 660px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.fromYearI_3 { /*Interview from_year value label*/
+    position: absolute;
+    top: 660px;
+    left: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+
+.labelJ_3 { /*Interview till label*/
+    position: absolute;
+    top: 710px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.tillDayJ_3 { /*Interview till_day value label*/
+    position: absolute;
+    top: 740px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.tillMonthJ_3 { /*Interview till_month value label*/
+    position: absolute;
+    top: 740px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.tillYearJ_3 { /*Interview till_year value label*/
+    position: absolute;
+    top: 740px;
+    left: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelK_3 { /*description label*/
+    position: absolute;
+    top: 790px;
+    left: 10px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxK_3 { /*description value label*/
+    position: absolute;
+    top: 820px;
+    left: 20px;
+    height: 100px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightsteelblue;
+    color: white;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.buttonA_3 { /*Apply button*/
+    position: absolute;
+    right: 30px;
+    top: 950px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*Apply button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonB_3 { /*Cancel button*/
+    position: absolute;
+    right: 30px;
+    top: 950px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*Cancel button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+#horizontalA1_3 { /*horizontal line*/
+    position: absolute;
+    top: 1000px;
+    left: 20px;
+    width: 550px;
+    height: 2px;
+}
+
+.labelL_3 { /*job posted by label*/
+    position: absolute;
+    top: 1050px;
+    left: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: blue;
+    color: navajowhite;
+    text-shadow: 1px 1px 3px black;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.imageA_3 { /*profile pic*/
+    border: 2px solid black;
+    position: absolute;
+    top: 1100px;
+    left: 20px;
+    box-shadow: black 2px 2px 5px;
+    height: 150px;
+    width: 150px;
+}
+
+.labelM_3 { /*emp Name label*/
+    position: absolute;
+    top: 1100px;
+    right: 20px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueM_3 { /*emp Name value label*/
+    position: absolute;
+    top: 1130px;
+    right: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelN_3 { /*emp designation label*/
+    position: absolute;
+    top: 1180px;
+    right: 20px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueN_3 { /*emp designation value label*/
+    position: absolute;
+    top: 1210px;
+    right: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelO_3 { /*emp contact number label*/
+    position: absolute;
+    top: 1260px;
+    right: 20px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueO_3 { /*emp contact number value label*/
+    position: absolute;
+    top: 1290px;
+    right: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelP_3 { /*emp email id label*/
+    position: absolute;
+    top: 1340px;
+    right: 20px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.labelValueP_3 { /*emp email id value label*/
+    position: absolute;
+    top: 1370px;
+    right: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+.labelQ_3 { /*emp company video label*/
+    position: absolute;
+    top: 1420px;
+    right: 20px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.buttonQ_3 { /*emp company video button*/
+    position: absolute;
+    right: 30px;
+    top: 1450px;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonQ_3:hover { /*emp company video button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.labelR_3 { /*emp compnay address label*/
+    position: absolute;
+    top: 1500px;
+    right: 20px;
+    background-color: black;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.textboxR_3 { /*emp compnay address value label*/
+    position: absolute;
+    top: 1530px;
+    right: 30px;
+    height: 100px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: lightsteelblue;
+    color: white;
+    text-shadow: 1px 1px 3px #011b97;
+}
+
+#horizontalB1_3 { /*horizontal line*/
+    position: absolute;
+    top: 1680px;
+    left: 20px;
+    width: 550px;
+    height: 2px;
+}

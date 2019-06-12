@@ -1,0 +1,1421 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+
+#divA_3 {/*box*//*label & textbox 50px*/ /*textbox & label 70px*//*textbox & button 100px*//*button & endline 50px*//*enline & new_label 50px*//*new_label & label 100px*/
+    position: absolute;
+    top: 135px;
+    left: 350px;
+    height: 420px;
+    width: 850px;
+    background:linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    border:3px solid gray;
+    box-shadow:2px 2px 5px black;
+    overflow:scroll;
+}
+.pA_3{/*employment label*//*************************employment*/
+    position:absolute;
+    top:10px;
+    left:360px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelA_3{/*your designation label*/
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxA_3{/*your designation textbox*/
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelB_3{/*your organization label*/
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxB_3{/*your organization textbox*/
+    position: absolute;
+    top: 270px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+
+.labelC_3{/*is this your current company label*/
+    position: absolute;
+    top: 340px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.radiobuttonA_3{/*yes radio button*/
+    position: absolute;
+    top: 390px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.radiobuttonB_3{/*no radio button*/
+    position: absolute;
+    top: 390px;
+    left: 90px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+
+.buttonA_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 460px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonA_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.update_buttonA_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 460px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonA_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.success_labelA_3 {/*data saved label*/
+    position: absolute;
+    top: 470px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pB_3{/****************************************************end line*/
+    position: absolute;
+    top: 510px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+
+.pC_3{/*project label*//*************************project*/
+    position:absolute;
+    top:560px;
+    left:380px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.labelD_3{/*project title label*/
+    position: absolute;
+    top: 660px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxC_3{/*project title textbox*/
+    position: absolute;
+    top: 710px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelE_3{/*tag this project to label*/
+    position: absolute;
+    top: 780px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.radiobuttonC_3{/*education radio button*/
+    position: absolute;
+    top: 830px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.radiobuttonD_3{/*employment radio button*/
+    position: absolute;
+    top: 830px;
+    left: 150px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.labelF_3{/*project status to label*/
+    position: absolute;
+    top: 900px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.radiobuttonE_3{/*in_progress radio button*/
+    position: absolute;
+    top: 950px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.radiobuttonF_3{/*finished radio button*/
+    position: absolute;
+    top: 950px;
+    left: 150px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.labelG_3{/*describe project label*/
+    position: absolute;
+    top: 1020px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxD_3{/*describe project textbox*/
+    position: absolute;
+    top: 1070px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.buttonB_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 1170px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonB_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.update_buttonB_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 1170px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonB_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+.success_labelB_3 {/*data saved label*/
+    position: absolute;
+    top: 1180px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pD_3{/****************************************************end line*/
+    position: absolute;
+    top: 1220px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+
+.pE_3{/*online profile label*//*************************online profile*/
+    position:absolute;
+    top:1270px;
+    left:340px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelH_3{/*social profile label*/
+    position: absolute;
+    top: 1370px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxE_3{/*social profile textbox*/
+    position: absolute;
+    top: 1420px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelI_3{/*url label*/
+    position: absolute;
+    top: 1490px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxF_3{/*url textbox*/
+    position: absolute;
+    top: 1540px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelJ_3{/*description label*/
+    position: absolute;
+    top: 1610px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxG_3{/*description textbox*/
+    position: absolute;
+    top: 1660px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.buttonC_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 1760px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonC_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.update_buttonC_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 1760px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonC_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.success_labelC_3 {/*data saved label*/
+    position: absolute;
+    top: 1770px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pF_3{/****************************************************end line*/
+    position: absolute;
+    top: 1810px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+
+.pG_3{/*Certification label*//*************************certification*/
+    position:absolute;
+    top:1860px;
+    left:350px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelK_3{/*certification name label*/
+    position: absolute;
+    top: 1960px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxH_3{/*certification name textbox*/
+    position: absolute;
+    top: 2010px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelL_3{/*certification body label*/
+    position: absolute;
+    top: 2080px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxI_3{/*certification body textbox*/
+    position: absolute;
+    top: 2130px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelM_3{/*year label*/
+    position: absolute;
+    top: 2200px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlA_3{/*year dropdownlist*/
+    position: absolute;
+    top: 2250px;
+    left: 5px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.buttonD_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 2350px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonD_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.update_buttonD_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 2350px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonD_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.success_labelD_3 {/*data saved label*/
+    position: absolute;
+    top: 2360px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pH_3{/****************************************************end line*/
+    position: absolute;
+    top: 2400px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+.pI_3{/*personal details label*//*************************personal details*/
+    position:absolute;
+    top:2450px;
+    left:320px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelN_3{/*Date of Birth label*/
+    position: absolute;
+    top: 2550px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlB_3{/*Date of Birth year dropdownlist*/
+    position: absolute;
+    top: 2600px;
+    left: 5px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlC_3{/*Date of Birth month dropdownlist*/
+    position: absolute;
+    top: 2600px;
+    left: 165px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlD_3{/*Date of Birth day dropdownlist*/
+    position: absolute;
+    top: 2600px;
+    left: 325px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.labelO_3{/*gender label*/
+    position: absolute;
+    top: 2670px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.radiobuttonG_3{/*male radio button*/
+    position: absolute;
+    top: 2720px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.radiobuttonH_3{/*female radio button*/
+    position: absolute;
+    top: 2720px;
+    left: 150px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.labelP_3{/*state label*/
+    position: absolute;
+    top: 2790px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlE_3{/*state dropdownlist*/
+    position: absolute;
+    top: 2840px;
+    left: 10px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.labelQ_3{/*city label*/
+    position: absolute;
+    top: 2910px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlF_3{/*city dropdownlist*/
+    position: absolute;
+    top: 2960px;
+    left: 10px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.labelR_3{/*hometown label*/
+    position: absolute;
+    top: 3030px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxJ_3{/*hometown textbox*/
+    position: absolute;
+    top: 3080px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelS_3{/*pincode label*/
+    position: absolute;
+    top: 3150px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxK_3{/*pincode textbox*/
+    position: absolute;
+    top: 3200px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelT_3{/*marital status label*/
+    position: absolute;
+    top: 3270px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlG_3{/*marital status dropdownlist*/
+    position: absolute;
+    top: 3320px;
+    left: 10px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.buttonE_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 3420px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonE_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.update_buttonE_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 3420px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonE_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.success_labelE_3 {/*data saved label*/
+    position: absolute;
+    top: 3430px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pJ_3{/****************************************************end line*/
+    position: absolute;
+    top: 3470px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+
+.pK_3{/*desired career profile label*//*************************desired career profile*/
+    position:absolute;
+    top:3520px;
+    left:280px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelU_3{/*industry label*/
+    position: absolute;
+    top: 3620px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlH_3{/*industry dropdownlist*/
+    position: absolute;
+    top: 3670px;
+    left: 10px;
+    width:250px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.labelV_3{/*role label*/
+    position: absolute;
+    top: 3740px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlI_3{/*industry dropdownlist*/
+    position: absolute;
+    top: 3790px;
+    left: 10px;
+    width:250px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.labelW_3{/*job type label*/
+    position: absolute;
+    top: 3860px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.checkboxA_3{/*job type permanent checkbox*/
+    position: absolute;
+    top: 3910px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.checkboxB_3{/*job type contract checkbox*/
+    position: absolute;
+    top: 3910px;
+    left: 150px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.labelX_3{/*employment type label*/
+    position: absolute;
+    top: 3980px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.checkboxC_3{/*job type permanent checkbox*/
+    position: absolute;
+    top: 4030px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.checkboxD_3{/*job type contract checkbox*/
+    position: absolute;
+    top: 4030px;
+    left: 150px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.labelY_3{/*preferred shift label*/
+    position: absolute;
+    top: 4100px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.radiobuttonI_3{/*preferred shift day radio button*/
+    position: absolute;
+    top: 4150px;
+    left: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.radiobuttonJ_3{/*preferred shift night radio button*/
+    position: absolute;
+    top: 4150px;
+    left: 150px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.radiobuttonK_3{/*preferred shift flexible radio button*/
+    position: absolute;
+    top: 4150px;
+    left: 290px;
+    font-size: 20px;
+    font-family: Arial;
+    text-shadow:2px 2px 5px white;
+}
+.labelZ_3{/*expected salary label*/
+    position: absolute;
+    top: 4220px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlJ_3{/*expected salary lakhs dropdownlist*/
+    position: absolute;
+    top: 4270px;
+    left: 10px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.ddlK_3{/*expected salary thousands dropdownlist*/
+    position: absolute;
+    top: 4270px;
+    left: 200px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.buttonF_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 4370px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonF_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+.update_buttonF_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 4370px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonF_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+
+.success_labelF_3 {/*data saved label*/
+    position: absolute;
+    top: 4380px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pL_3{/****************************************************end line*/
+    position: absolute;
+    top: 4420px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+.pM1_3{/*education label*//********************************education*/
+    position:absolute;
+    top:4470px;
+    left:350px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:5px;
+    padding-right:5px;
+}
+.labelZE_3{/*highest qualification label*/
+    position: absolute;
+    top: 4570px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.ddlL_3{/*highest qualification dropdownlist*/
+    position: absolute;
+    top: 4620px;
+    left: 10px;
+    width:150px;
+    height:40px;
+    background-color: gainsboro;
+    font-size:18px;
+}
+.labelZA_3{/*course name label*/
+    position: absolute;
+    top: 4690px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxL_3{/*course name textbox*/
+    position: absolute;
+    top: 4740px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelZB_3{/*college name label*/
+    position: absolute;
+    top: 4810px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxM_3{/*college name textbox*/
+    position: absolute;
+    top: 4860px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelZC_3{/*university name label*/
+    position: absolute;
+    top: 4930px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxN_3{/*university name textbox*/
+    position: absolute;
+    top: 4980px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.labelZD_3{/*percentage label*/
+    position: absolute;
+    top: 5050px;
+    left: 10px;
+    background-color: black;
+    color: navajowhite;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 0px 20px;
+}
+.textboxO_3{/*percentage textbox*/
+    position: absolute;
+    top: 5100px;
+    left: 5px;
+    font-size: 30px;
+    background-color: gainsboro;
+}
+.buttonG_3{/*save button*/
+    position: absolute;
+    left: 10px;
+    top: 5200px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonG_3:hover{/*save button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.update_buttonG_3{/*update button*/
+    position: absolute;
+    left: 10px;
+    top: 5200px;
+    width:170px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.update_buttonG_3:hover{/*update button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.success_labelG_3 {/*data saved label*/
+    position: absolute;
+    top: 5210px;
+    right: 420px;
+    font-family: Arial;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.pN_3{/****************************************************end line*/
+    position: absolute;
+    top: 5250px;
+    left: 140px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:20px;
+}
+
+/************************************Required Feild vallidators******************************************/
+
+/**********************employment*********************************/
+
+.rfvA_3{/*your designation validator*/
+    position:absolute;
+    right:280px;
+    top:160px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvB_3{/*your organization validator*/
+    position:absolute;
+    right:270px;
+    top:280px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsA_3{/*employment validation summary*/
+    position:absolute;
+    right:20px;
+    top:10px;
+}
+/*******************project*************************************/
+
+.rfvC_3{/*project title validator*/
+    position:absolute;
+    right:320px;
+    top:720px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvD_3{/*project description validator*/
+    position:absolute;
+    right:220px;
+    top:1090px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsB_3{/*validation summary*/
+    position:absolute;
+    right:20px;
+    top:560px;
+}
+/*******************Online Profile*************************************/
+
+.rfvE_3{/*Social Profile validator*/
+    position:absolute;
+    right:200px;
+    top:1430px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvF_3{/*Url validator*/
+    position:absolute;
+    right:220px;
+    top:1550px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvG_3{/*Description validator*/
+    position:absolute;
+    right:180px;
+    top:1670px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsC_3{/*validation summary*/
+    position:absolute;
+    right:20px;
+    top:1270px;
+}
+
+/*******************Certification*************************************/
+
+.rfvH_3{/*Certification Name validator*/
+    position:absolute;
+    right:230px;
+    top:2020px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvI_3{/*Certification Body validator*/
+    position:absolute;
+    right:180px;
+    top:2140px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlA_3{/*Certification Year validator*/
+    position:absolute;
+    right:450px;
+    top:2260px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsD_3{
+    position:absolute;
+    right:20px;
+    top:1860px;
+}
+
+/*******************Personal Details*************************************/
+
+.rfv_ddlB_3{/*Enter Birth_Day validator*/
+    position:absolute;
+    right:330px;
+    top:2610px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlC_3{/*Enter Birth_Month validator*/
+    position:absolute;
+    right:320px;
+    top:2610px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlD_3{/*Enter Birth_Year validator*/
+    position:absolute;
+    right:310px;
+    top:2610px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlE_3{/*state validator*/
+    position:absolute;
+    right:480px;
+    top:2850px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlF_3{/*city validator*/
+    position:absolute;
+    right:485px;
+    top:2970px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvJ_3{/*Hometown required validator*/
+    position:absolute;
+    right:250px;
+    top:3090px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.revJ_3{/*Hometown regular expression validator*/
+    position:absolute;
+    right:250px;
+    top:3090px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.revK_3{/*pincode regular expression validator*/
+    position:absolute;
+    right:340px;
+    top:3210px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvK_3{/*pincode required feild validator*/
+    position:absolute;
+    right:340px;
+    top:3210px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlG_3{/*Marital Status required feild validator*/
+    position:absolute;
+    right:450px;
+    top:3330px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsE_3{
+    position:absolute;
+    right:20px;
+    top:2550px;
+}
+
+/*******************Desired Career Profile*************************************/
+
+.rfv_ddlH_3{/*Industry Required required feild validator*/
+    position:absolute;
+    right:400px;
+    top:3680px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlI_3{/*Role Required required feild validator*/
+    position:absolute;
+    right:425px;
+    top:3800px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlJ_3{/*Expected Salary Lakh required feild validator*/
+    position:absolute;
+    right:250px;
+    top:4280px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfv_ddlK_3{/*Expected Salary thousand required feild validator*/
+    position:absolute;
+    right:250px;
+    top:4280px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsF_3{
+    position:absolute;
+    right:20px;
+    top:3530px;
+}
+
+/*******************Education*************************************/
+
+.rfv_ddlL_3{/*Highest Qualification Required required feild validator*/
+    position:absolute;
+    right:400px;
+    top:4630px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvL_3{/*Course Name required required feild validator*/
+    position:absolute;
+    right:280px;
+    top:4750px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.revL_3{/*Course Name invalid regular expression validator*/
+    position:absolute;
+    right:300px;
+    top:4750px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvM_3{/*College Name Required required feild validator*/
+    position:absolute;
+    right:280px;
+    top:4870px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.revM_3{/*College Name Invalid regular expression validator*/
+    position:absolute;
+    right:300px;
+    top:4870px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvN_3{/*University Name Required required feild validator*/
+    position:absolute;
+    right:260px;
+    top:4990px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.revN_3{/*University Name Invalid regular expression validator*/
+    position:absolute;
+    right:280px;
+    top:4990px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.rfvO_3{/*Percentage Required Required required feild validator*/
+    position:absolute;
+    right:300px;
+    top:5110px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.revO_3{/*Percentage Invalid regular expression validator*/
+    position:absolute;
+    right:230px;
+    top:5110px;
+    font-size:20px;
+    text-shadow:2px 2px 2px white;
+}
+.vsG_3{
+    position:absolute;
+    right:20px;
+    top:4470px;
+}
+
+/*******************Markers*************************************/
+
+#h3A1_3{/*Project*/
+    position:absolute;
+    right:100px;
+    top:170px;
+    font-family:'Bell MT';
+    font-size:15px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    border-bottom:1px solid black;
+    
+}
+#h3B1_3{/*online profile*/
+    position:absolute;
+    right:55px;
+    top:230px;
+    font-family:'Bell MT';
+    font-size:15px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    border-bottom:1px solid black;
+}
+#h3C1_3{/*Certification*/
+    position:absolute;
+    right:62px;
+    top:270px;
+    font-family:'Bell MT';
+    font-size:15px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    border-bottom:1px solid black;
+}
+#h3D1_3{/*personal details*/
+    position:absolute;
+    right:67px;
+    top:320px;
+    font-family:'Bell MT';
+    font-size:15px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    border-bottom:1px solid black;
+}
+#h3E1_3{/*Desired career profile*/
+    position:absolute;
+    right:70px;
+    top:395px;
+    font-family:'Bell MT';
+    font-size:15px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    border-bottom:1px solid black;
+}
+#h3F1_3{/*Education*/
+    position:absolute;
+    right:75px;
+    top:455px;
+    font-family:'Bell MT';
+    font-size:15px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    border-bottom:1px solid black;
+}

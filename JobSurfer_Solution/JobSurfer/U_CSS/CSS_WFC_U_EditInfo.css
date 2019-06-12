@@ -1,0 +1,44 @@
+﻿body {
+
+    padding:0px;
+    margin:0px;
+}
+#divA1_3{/*box*/
+    position: absolute;
+    top: 200px;
+    right: 350px;
+    height: 300px;
+    width: 500px;
+    background:linear-gradient(to bottom, #59a5ff, #d1d5ff); /*linear-gradient(to bottom, #34d2df, #c69eff)*/
+    opacity: 0.7;
+    border:3px solid gray;
+    box-shadow:2px 2px 5px black;
+}
+.buttonA_3{/*general info button*/
+    position: absolute;
+    left: 120px;
+    top: 70px;
+    width:250px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonA_3:hover{/*general info button hover*/
+    background-color: lightsalmon;
+    color: white;
+}
+.buttonB_3{/*personal info button*/
+    position: absolute;
+    left: 120px;
+    top: 160px;
+    width:250px;
+    height:50px;
+    font-size:18px;
+    font-family:Arial;
+    background-color: lightblue;
+}
+.buttonB_3:hover{ /*personal info button hover*/
+    background-color: lightsalmon;
+    color: white;
+}

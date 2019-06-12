@@ -1,0 +1,58 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divA1_3 { /*box*/
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    border: 3px solid gray;
+    height: 300px;
+    width: 700px;
+    background: linear-gradient(to bottom, #59a5ff, #d1d5ff);
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px black;
+}
+
+.imageA_3 { /*youtube logo*/
+    position: absolute;
+    top: 15px;
+    right: 280px;
+    height: 100px;
+    width: 130px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 7px black;
+}
+
+.buttonB_3 { /*Click To View button*/
+    position: absolute;
+    left: 275px;
+    bottom: 70px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonB_3:hover { /*Click To View button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
+
+.buttonA_3 { /*Add Video Resume button*/
+    position: absolute;
+    left: 275px;
+    bottom: 70px;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+
+    .buttonA_3:hover { /*Add Video Resume button hover*/
+        background-color: lightsalmon;
+        color: white;
+    }
