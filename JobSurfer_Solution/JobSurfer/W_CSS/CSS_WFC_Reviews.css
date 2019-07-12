@@ -1,0 +1,66 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+.ImgA_3{
+    position:relative;
+    left:5px;
+    top:20px;
+    border:2px solid black;
+    height:400px;
+    width:1350px;
+}
+.ImgB_3{
+    position:relative;
+    left:5px;
+    top:20px;
+    border:2px solid black;
+    height:400px;
+    width:1350px;
+}
+.ImgC_3{
+    position:relative;
+    left:5px;
+    top:20px;
+    border:2px solid black;
+    height:400px;
+    width:1350px;    
+}
+.ImgD_3{
+    position:relative;
+    left:5px;
+    top:20px;
+    border:2px solid black;
+    height:400px;
+    width:1350px;    
+}
+.ButA_3{
+    position:absolute;
+    right:20px;
+    top:350px;
+    font-size:30px;
+    border:3px solid white;
+    background-color:black;
+    color:white;
+    opacity:0.4;
+}
+.ButA_3:hover{
+    font-size:30px;
+    border:3px solid black;
+    opacity:0.8;
+}
+.ButB_3{
+    position:absolute;
+    left:20px;
+    top:350px;
+    font-size:30px;
+    border:3px solid white;
+    background-color:black;
+    color:white;
+    opacity:0.4;
+}
+.ButB_3:hover{
+    font-size:30px;
+    border:3px solid black;
+    opacity:0.8;
+}

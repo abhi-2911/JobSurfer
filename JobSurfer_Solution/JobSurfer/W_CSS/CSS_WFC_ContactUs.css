@@ -1,0 +1,97 @@
+﻿body {
+}
+#divA_3 img{
+    position:relative;
+    top:20px;
+    left:10px;
+    height:430px;
+    width:1340px;
+}
+.pA_3{
+    position:absolute;
+    top:170px;
+    left:15px;
+    color:white;
+    font-size:30px;
+    font-family:Arial;
+    text-shadow:2px 2px 2px #000000;
+    background-color:#3065e2;
+    padding-left:30px;
+    padding-right:5px;
+}
+
+/*box*/
+
+#divB_3{
+    position:absolute;
+    top:250px;
+    right:400px;
+    height:300px;
+    width:500px;
+    background-color:darkgray;
+    opacity:0.7;
+    border:2px solid white;
+    box-shadow:2px 2px 2px #6f6d6d;
+}
+/*box content*/
+
+.pB_3{ /*Address*/
+    position:relative;
+    top:20px;
+    left:5px;
+    box-shadow:2px 2px 2px #000000;
+    display:inline;
+    font-family:Arial;
+    font-size:25px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    border:2px solid black;
+}
+.pC_3{  /*Address content*/
+    position:relative;
+    top:20px;
+    left:5px;
+    font-size:20px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+}
+.pD_3{  /*Customer Support*/
+    position:relative;
+    top:30px;
+    left:5px;
+    box-shadow:2px 2px 2px #000000;
+    display:inline;
+    font-family:Arial;
+    font-size:25px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    border:2px solid black;
+}
+.pE_3{  /*Number*/
+    position:relative;
+    top:30px;
+    left:5px;
+    font-size:20px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+}
+.pF_3{  /*Email*/
+    position:relative;
+    top:40px;
+    left:5px;
+    box-shadow:2px 2px 2px #000000;
+    display:inline;
+    font-family:Arial;
+    font-size:25px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    border:2px solid black;
+}
+.pG_3{  /*email id*/
+    position:relative;
+    top:30px;
+    left:5px;
+    font-size:20px;
+    color:white;
+    text-shadow:2px 2px 2px black;
+}
