@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Site_1.master.cs" Inherits="JobSurfer.W_MasterPage.Master_Site_1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>****MasterPage****</title>
+    <link href="../W_CSS/CSS_M_Site_1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="divA_1">
+            <img class="imgG_1" id="imgG1_1" src="../W_Images/Banner.jpg" />
+
+        </div>
+        <div id="divB_1">
+            <ul>
+                <li><a href="../Website/HomePage.aspx">Home</a></li>
+                <li><a href="../Website/AboutUs.aspx">About Us</a></li>
+                <li><a href="../Website/Company.aspx">Company</a></li>
+                <li><a href="../Website/Reviews.aspx">Reviews</a></li>
+                <li><a href="../Website/ContactUs.aspx">Contact Us</a></li>
+                <li><a href="../Website/W_LoginPage.aspx">Login</a></li>
+                <li><a href="../Website/W_RegisterPage.aspx">Register</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="divC_1">
+            <a id="aA_1" target="_blank" href="https://www.linkedin.com/jobsurfer">
+                <img class="ImgA_1" id="ImgA1_1" src="../W_Images/linkedIn.png" /></a>
+            <a id="aB_1" target="_blank" href="https://www.googleplus.com/jobsurfer">
+                <img class="ImgB_1" id="ImgB1_1" src="../W_Images/googleplus.png" /></a>
+            <a id="aC_1" target="_blank" href="https://www.facebook.com/jobsurfer">
+                <img class="ImgC_1" id="ImgC1_1" src="../W_Images/facebook.png" /></a>
+            <a id="aD_1" target="_blank" href="https://www.youtube.com/jobsurfer">
+                <img class="ImgD_1" id="ImgD1_1" src="../W_Images/youtube.png" /></a>
+            <a id="aE_1" target="_blank" href="https://www.twitter.com/jobsurfer">
+                <img class="ImgE_1" id="ImgE1_1" src="../W_Images/twitter.png" /></a>
+            <a id="aF_1" target="_blank" href="https://www.instagram.com/jobsurfer">
+                <img class="ImgF_1" id="ImgF1_1" src="../W_Images/instagram.png" /></a>
+            
+            <asp:Image CssClass="imageH_1" ID="imageH1_1" runat="server" ImageUrl="~/W_Images/JobSurfer_Logo.png" /><!--jobsurfer logo-->
+
+
+            <asp:ScriptManager ID="SMA_1" runat="server"></asp:ScriptManager>
+            <asp:UpdatePanel ID="UPA_1" runat="server">
+                <ContentTemplate>
+                    <asp:Label ID="LblA_1" runat="server" Text=""></asp:Label>
+                    <asp:Timer ID="TA_1" runat="server" Interval="1000" OnTick="TA_1_Tick"></asp:Timer>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+
+    </form>
+</body>
+</html>
