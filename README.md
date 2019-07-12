@@ -67,10 +67,10 @@ Online Job Portal called : JobSurfer , a project submitted to YCMOU for the fulf
 
 <img src="ScreenShots/Website/Screenshot (70).png" height="400" width="700">
 
-<img src="ScreenShots/Admin/Screenshot (72).png" height="400" width="700">
+<img src="ScreenShots/Website/Screenshot (72).png" height="400" width="700">
 
-<img src="ScreenShots/Admin/Screenshot (75).png" height="400" width="700">
+<img src="ScreenShots/Website/Screenshot (75).png" height="400" width="700">
 
-<img src="ScreenShots/Admin/Screenshot (76).png" height="400" width="700">
+<img src="ScreenShots/Website/Screenshot (76).png" height="400" width="700">
 
-<img src="ScreenShots/Admin/Screenshot (84).png" height="400" width="700">
+<img src="ScreenShots/Website/Screenshot (84).png" height="400" width="700">
