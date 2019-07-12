@@ -1,0 +1,2312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8689356F-411E-42CF-B388-71CB6A3B0DCB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JobSurfer</RootNamespace>
+    <AssemblyName>JobSurfer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\A_ChangePassword.aspx" />
+    <Content Include="Admin\A_FrontPage.aspx" />
+    <Content Include="Admin\A_List_E.aspx" />
+    <Content Include="Admin\A_List_E_Details.aspx" />
+    <Content Include="Admin\A_List_J.aspx" />
+    <Content Include="Admin\A_List_JS.aspx" />
+    <Content Include="Admin\A_List_JS_Details.aspx" />
+    <Content Include="Admin\A_List_JS_E_J.aspx" />
+    <Content Include="Admin\A_List_J_Details.aspx" />
+    <Content Include="Admin\A_LoginPage.aspx" />
+    <Content Include="Admin\A_Message_R_Em.aspx" />
+    <Content Include="Admin\A_Message_R_Js.aspx" />
+    <Content Include="Admin\A_Message_R_Js_Em.aspx" />
+    <Content Include="Admin\A_Message_S_Em.aspx" />
+    <Content Include="Admin\A_Message_S_Js.aspx" />
+    <Content Include="Admin\A_Message_S_Js_Em.aspx" />
+    <Content Include="Admin\A_Message_V_Em.aspx" />
+    <Content Include="Admin\A_Message_V_Em_Details.aspx" />
+    <Content Include="Admin\A_Message_V_Js.aspx" />
+    <Content Include="Admin\A_Message_V_Js_Details.aspx" />
+    <Content Include="Admin\A_Message_V_Js_Em.aspx" />
+    <Content Include="Admin\A_Message_V_S_R.aspx" />
+    <Content Include="Admin\A_Notification_R_Em.aspx" />
+    <Content Include="Admin\A_Notification_R_Js.aspx" />
+    <Content Include="Admin\A_Notification_R_Js_Em.aspx" />
+    <Content Include="Admin\A_Notification_S_Em.aspx" />
+    <Content Include="Admin\A_Notification_S_Js.aspx" />
+    <Content Include="Admin\A_Notification_S_Js_Em.aspx" />
+    <Content Include="Admin\A_Notification_V_Em.aspx" />
+    <Content Include="Admin\A_Notification_V_Em_Details.aspx" />
+    <Content Include="Admin\A_Notification_V_Js.aspx" />
+    <Content Include="Admin\A_Notification_V_Js_Details.aspx" />
+    <Content Include="Admin\A_Notification_V_Js_Em.aspx" />
+    <Content Include="Admin\A_Notification_V_S_R.aspx" />
+    <Content Include="Admin\A_Remove_E.aspx" />
+    <Content Include="Admin\A_Remove_J.aspx" />
+    <Content Include="Admin\A_Remove_JS.aspx" />
+    <Content Include="Admin\A_Remove_JS_E_J.aspx" />
+    <Content Include="Admin\A_Resources_Add_Doc_E.aspx" />
+    <Content Include="Admin\A_Resources_Add_Doc_J.aspx" />
+    <Content Include="Admin\A_Resources_Add_Doc_J_E.aspx" />
+    <Content Include="Admin\A_Resources_Add_Vid_Doc.aspx" />
+    <Content Include="Admin\A_Resources_Add_Vid_E.aspx" />
+    <Content Include="Admin\A_Resources_Add_Vid_J.aspx" />
+    <Content Include="Admin\A_Resources_Add_Vid_J_E.aspx" />
+    <Content Include="Admin\A_Resources_Add_View_Del.aspx" />
+    <Content Include="Admin\A_Resources_Del_Doc_E.aspx" />
+    <Content Include="Admin\A_Resources_Del_Doc_J.aspx" />
+    <Content Include="Admin\A_Resources_Del_Doc_J_E.aspx" />
+    <Content Include="Admin\A_Resources_Del_Vid_Doc.aspx" />
+    <Content Include="Admin\A_Resources_Del_Vid_E.aspx" />
+    <Content Include="Admin\A_Resources_Del_Vid_J.aspx" />
+    <Content Include="Admin\A_Resources_Del_Vid_J_E.aspx" />
+    <Content Include="Admin\A_Resources_View_Doc_E.aspx" />
+    <Content Include="Admin\A_Resources_View_Doc_J.aspx" />
+    <Content Include="Admin\A_Resources_View_Doc_J_E.aspx" />
+    <Content Include="Admin\A_Resources_View_Vid_Doc.aspx" />
+    <Content Include="Admin\A_Resources_View_Vid_E.aspx" />
+    <Content Include="Admin\A_Resources_View_Vid_J.aspx" />
+    <Content Include="Admin\A_Resources_View_Vid_J_E.aspx" />
+    <Content Include="Admin\A_Search_E.aspx" />
+    <Content Include="Admin\A_Search_E_Details.aspx" />
+    <Content Include="Admin\A_Search_Jobs.aspx" />
+    <Content Include="Admin\A_Search_Jobs_Details.aspx" />
+    <Content Include="Admin\A_Search_JS.aspx" />
+    <Content Include="Admin\A_Search_JS_Details.aspx" />
+    <Content Include="Admin\A_Search_JS_E_J.aspx" />
+    <Content Include="A_CSS\CSS_A_Message_R_Js.css" />
+    <Content Include="A_CSS\CSS_A_Notification_V_Em.css" />
+    <Content Include="A_CSS\CSS_Master_Site_4.css" />
+    <Content Include="A_CSS\CSS_WFC_A_ChangePassword.css" />
+    <Content Include="A_CSS\CSS_WFC_A_FrontPage.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_E_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_JS.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_JS_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_JS_E_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_List_J_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_LoginPage.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_R_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_R_Js_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_S_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_S_Js.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_S_Js_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_V_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_V_Em_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_V_Js.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_V_Js_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_V_Js_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Message_V_S_R.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_R_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_R_Js.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_R_Js_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_S_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_S_Js.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_S_Js_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_V_Em_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_V_Js.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_V_Js_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_V_Js_Em.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Notification_V_S_R.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Remove_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Remove_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Remove_JS.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Remove_JS_E_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Doc_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Doc_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Doc_J_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Vid_Doc.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Vid_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Vid_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_Vid_J_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Add_View_Del.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Doc_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Doc_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Doc_J_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Vid_Doc.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Vid_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Vid_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_Del_Vid_J_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Doc_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Doc_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Doc_J_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Vid_Doc.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Vid_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Vid_J.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Resources_View_Vid_J_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_E.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_E_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_Jobs.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_Jobs_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_JS.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_JS_Details.css" />
+    <Content Include="A_CSS\CSS_WFC_A_Search_JS_E_J.css" />
+    <Content Include="A_Images\Banner.jpg" />
+    <Content Include="A_Images\ico_facebook.png" />
+    <Content Include="A_Images\ico_googleplus.png" />
+    <Content Include="A_Images\ico_instagram.png" />
+    <Content Include="A_Images\ico_linkedIn.png" />
+    <Content Include="A_Images\ico_twitter.png" />
+    <Content Include="A_Images\ico_youtube.png" />
+    <Content Include="A_Images\JobSurfer_Logo.png" />
+    <Content Include="A_Images\job_15.jpg" />
+    <Content Include="A_WebFormControl\WFC_A_ChangePassword.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_FrontPage.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_E_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_JS.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_JS_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_JS_E_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_List_J_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_LoginPage.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_R_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_R_Js.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_R_Js_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_S_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_S_Js.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_S_Js_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_V_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_V_Em_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_V_Js.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_V_Js_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_V_Js_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Message_V_S_R.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_R_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_R_Js.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_R_Js_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_S_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_S_Js.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_S_Js_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_V_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_V_Em_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_V_Js.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_V_Js_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_V_Js_Em.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Notification_V_S_R.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Remove_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Remove_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Remove_JS.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Remove_JS_E_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Doc_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Doc_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Doc_J_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Vid_Doc.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Vid_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Vid_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_Vid_J_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Add_View_Del.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Doc_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Doc_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Doc_J_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Vid_Doc.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Vid_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Vid_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_Del_Vid_J_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Doc_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Doc_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Doc_J_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Vid_Doc.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Vid_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Vid_J.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Resources_View_Vid_J_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_E.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_E_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_Jobs.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_Jobs_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_JS.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_JS_Details.ascx" />
+    <Content Include="A_WebFormControl\WFC_A_Search_JS_E_J.ascx" />
+    <Content Include="Employer\E_AddVideo.aspx" />
+    <Content Include="Employer\E_ChangePassword.aspx" />
+    <Content Include="Employer\E_ChangeProfilePic.aspx" />
+    <Content Include="Employer\E_DeleteJob.aspx" />
+    <Content Include="Employer\E_EditInfo.aspx" />
+    <Content Include="Employer\E_LoginPage.aspx" />
+    <Content Include="Employer\E_Messages.aspx" />
+    <Content Include="Employer\E_Message_Details.aspx" />
+    <Content Include="Employer\E_Notifications.aspx" />
+    <Content Include="Employer\E_Notification_Details.aspx" />
+    <Content Include="Employer\E_PostJobs.aspx" />
+    <Content Include="Employer\E_ProfilePage.aspx" />
+    <Content Include="Employer\E_RegisterPage.aspx" />
+    <Content Include="Employer\E_Resource_D.aspx" />
+    <Content Include="Employer\E_Resource_V.aspx" />
+    <Content Include="Employer\E_Resource_V_D.aspx" />
+    <Content Include="Employer\E_UpdateJobs.aspx" />
+    <Content Include="Employer\E_UpdateJobs_Edit.aspx" />
+    <Content Include="Employer\E_ViewApplicants.aspx" />
+    <Content Include="Employer\E_ViewApplicants_JS.aspx" />
+    <Content Include="Employer\E_ViewApplicants_JS_Details.aspx" />
+    <Content Include="Employer\E_ViewJobs.aspx" />
+    <Content Include="Employer\E_ViewJobs_Details.aspx" />
+    <Content Include="Employer\E_ViewVideo.aspx" />
+    <Content Include="E_CSS\CSS_Master_Site_3.css" />
+    <Content Include="E_CSS\CSS_WFC_E_AddVideo.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ChangePassword.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ChangeProfilePic.css" />
+    <Content Include="E_CSS\CSS_WFC_E_DeleteJob.css" />
+    <Content Include="E_CSS\CSS_WFC_E_EditInfo.css" />
+    <Content Include="E_CSS\CSS_WFC_E_LoginPage.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Messages.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Message_Details.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Notifications.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Notification_Details.css" />
+    <Content Include="E_CSS\CSS_WFC_E_PostJobs.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ProfilePage.css" />
+    <Content Include="E_CSS\CSS_WFC_E_RegisterPage.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Resource_D.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Resource_V.css" />
+    <Content Include="E_CSS\CSS_WFC_E_Resource_V_D.css" />
+    <Content Include="E_CSS\CSS_WFC_E_UpdateJobs.css" />
+    <Content Include="E_CSS\CSS_WFC_E_UpdateJobs_Edit.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ViewApplicants.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ViewApplicants_JS.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ViewApplicants_JS_Details.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ViewJobs.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ViewJobs_Details.css" />
+    <Content Include="E_CSS\CSS_WFC_E_ViewVideo.css" />
+    <Content Include="E_Images\Banner.jpg" />
+    <Content Include="E_Images\ico_facebook.png" />
+    <Content Include="E_Images\ico_googleplus.png" />
+    <Content Include="E_Images\ico_instagram.png" />
+    <Content Include="E_Images\ico_linkedIn.png" />
+    <Content Include="E_Images\ico_twitter.png" />
+    <Content Include="E_Images\ico_youtube.png" />
+    <Content Include="E_Images\ico_youtube_logo.png" />
+    <Content Include="E_Images\JobSurfer_Logo.png" />
+    <Content Include="E_Images\job_15.jpg" />
+    <Content Include="E_Images\job_36.jpg" />
+    <Content Include="E_Images\job_40.jpg" />
+    <Content Include="E_Images\job_43.jpg" />
+    <Content Include="E_Images\Login_2.jpg" />
+    <Content Include="E_WebFormControl\WFC_E_AddVideo.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ChangePassword.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ChangeProfilePic.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_DeleteJob.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_EditInfo.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_LoginPage.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Messages.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Message_Details.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Notifications.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Notification_Details.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_PostJobs.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ProfilePage.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_RegisterPage.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Resource_D.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Resource_V.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_Resource_V_D.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_UpdateJobs.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_UpdateJobs_Edit.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ViewApplicants.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ViewApplicants_JS.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ViewApplicants_JS_Details.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ViewJobs.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ViewJobs_Details.ascx" />
+    <Content Include="E_WebFormControl\WFC_E_ViewVideo.ascx" />
+    <Content Include="packages.config" />
+    <Content Include="User\U_AddVideoResume.aspx" />
+    <Content Include="User\U_AppliedJobs.aspx" />
+    <Content Include="User\U_AppliedJobs_JobView.aspx" />
+    <Content Include="User\U_ChangePassword.aspx" />
+    <Content Include="User\U_ChangeProfilePic.aspx" />
+    <Content Include="User\U_EditInfo.aspx" />
+    <Content Include="User\U_EditInfo_General.aspx" />
+    <Content Include="User\U_EditInfo_Professional.aspx" />
+    <Content Include="User\U_JobSearch.aspx" />
+    <Content Include="User\U_JobSearch_JobView.aspx" />
+    <Content Include="User\U_JobSearch_Table.aspx" />
+    <Content Include="User\U_LoginPage.aspx" />
+    <Content Include="User\U_Messages.aspx" />
+    <Content Include="User\U_Message_Details.aspx" />
+    <Content Include="User\U_Notifications.aspx" />
+    <Content Include="User\U_Notification_Details.aspx" />
+    <Content Include="User\U_ProfilePage.aspx" />
+    <Content Include="User\U_RegisterPage.aspx" />
+    <Content Include="User\U_Resource_D.aspx" />
+    <Content Include="User\U_Resource_V.aspx" />
+    <Content Include="User\U_Resource_V_D.aspx" />
+    <Content Include="User\U_UploadResume.aspx" />
+    <Content Include="User\U_ViewResume.aspx" />
+    <Content Include="User\U_ViewVideoResume.aspx" />
+    <Content Include="U_CSS\CSS_M_Site_2.css" />
+    <Content Include="U_CSS\CSS_WFC_U_AddVideoResume.css" />
+    <Content Include="U_CSS\CSS_WFC_U_AppliedJobs.css" />
+    <Content Include="U_CSS\CSS_WFC_U_AppliedJobs_JobView.css" />
+    <Content Include="U_CSS\CSS_WFC_U_ChangePassword.css" />
+    <Content Include="U_CSS\CSS_WFC_U_ChangeProfilePic.css" />
+    <Content Include="U_CSS\CSS_WFC_U_EditInfo.css" />
+    <Content Include="U_CSS\CSS_WFC_U_EditInfo_General.css" />
+    <Content Include="U_CSS\CSS_WFC_U_EditInfo_Professional.css" />
+    <Content Include="U_CSS\CSS_WFC_U_JobSearch.css" />
+    <Content Include="U_CSS\CSS_WFC_U_JobSearch_JobView.css" />
+    <Content Include="U_CSS\CSS_WFC_U_JobSearch_Table.css" />
+    <Content Include="U_CSS\CSS_WFC_U_LoginPage.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Messages.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Message_Details.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Notifications.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Notification_Details.css" />
+    <Content Include="U_CSS\CSS_WFC_U_ProfilePage.css" />
+    <Content Include="U_CSS\CSS_WFC_U_RegisterPage.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Resource_D.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Resource_V.css" />
+    <Content Include="U_CSS\CSS_WFC_U_Resource_V_D.css" />
+    <Content Include="U_CSS\CSS_WFC_U_UploadResume.css" />
+    <Content Include="U_CSS\CSS_WFC_U_ViewResume.css" />
+    <Content Include="U_CSS\CSS_WFC_U_ViewVideoResume.css" />
+    <Content Include="U_Images\abhi_s.jpeg" />
+    <Content Include="U_Images\Banner.jpg" />
+    <Content Include="U_Images\ico_facebook.png" />
+    <Content Include="U_Images\ico_googleplus.png" />
+    <Content Include="U_Images\ico_instagram.png" />
+    <Content Include="U_Images\ico_linkedIn.png" />
+    <Content Include="U_Images\ico_pdf_logo.png" />
+    <Content Include="U_Images\ico_twitter.png" />
+    <Content Include="U_Images\ico_youtube.png" />
+    <Content Include="U_Images\ico_youtube_logo.png" />
+    <Content Include="U_Images\JobSurfer_Logo.png" />
+    <Content Include="U_Images\job_15.jpg" />
+    <Content Include="U_Images\job_18.jpg" />
+    <Content Include="U_Images\job_21.jpg" />
+    <Content Include="U_Images\job_22.jpg" />
+    <Content Include="U_Images\job_23.jpg" />
+    <Content Include="U_Images\job_4.jpg" />
+    <Content Include="U_Images\job_45.png" />
+    <Content Include="U_Images\Login_2.jpg" />
+    <Content Include="U_Images\wall_2.jpg" />
+    <Content Include="U_Images\wall_3.jpg" />
+    <Content Include="U_Images\wall_4.jpg" />
+    <Content Include="U_WebFormControl\WFC_U_AddVideoResume.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_AppliedJobs.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_AppliedJobs_JobView.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_ChangePassword.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_ChangeProfilePic.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_EditInfo.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_EditInfo_General.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_EditInfo_Professional.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_JobSearch.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_JobSearch_JobView.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_JobSearch_Table.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_LoginPage.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Messages.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Message_Details.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Notifications.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Notification_Details.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_ProfilePage.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_RegisterPage.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Resource_D.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Resource_V.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_Resource_V_D.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_UploadResume.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_ViewResume.ascx" />
+    <Content Include="U_WebFormControl\WFC_U_ViewVideoResume.ascx" />
+    <Content Include="Website\W_LoginPage.aspx" />
+    <Content Include="Website\W_RegisterPage.aspx" />
+    <Content Include="W_CSS\CSS_WFC_Reviews.css" />
+    <Content Include="W_CSS\CSS_WFC_W_LoginPage.css" />
+    <Content Include="W_CSS\CSS_WFC_W_RegisterPage.css" />
+    <Content Include="W_Images\AboutUs_2.jpg" />
+    <Content Include="W_Images\Banner.jpg" />
+    <Content Include="W_Images\ContactUs_3.jpg" />
+    <Content Include="W_Images\dainik_rev.jpg" />
+    <Content Include="W_Images\dna_rev.jpg" />
+    <Content Include="W_Images\facebook.png" />
+    <Content Include="W_Images\googleplus.png" />
+    <Content Include="W_Images\instagram.png" />
+    <Content Include="W_Images\Img_6.jpg" />
+    <Content Include="W_Images\JobSurfer_Logo.png" />
+    <Content Include="W_Images\job_22.jpg" />
+    <Content Include="W_Images\job_45.png" />
+    <Content Include="W_Images\linkedIn.png" />
+    <Content Include="W_Images\Login.jpg" />
+    <Content Include="W_Images\LoginAs.jpg" />
+    <Content Include="W_Images\mid-day_rev.jpg" />
+    <Content Include="W_Images\News paper_1.jpg" />
+    <Content Include="W_Images\News paper_2.jpg" />
+    <Content Include="W_Images\News paper_3.jpg" />
+    <Content Include="W_Images\News paper_4.jpg" />
+    <Content Include="W_Images\Register_2.jpg" />
+    <Content Include="W_Images\toi_rev.jpg" />
+    <Content Include="W_Images\twitter.png" />
+    <Content Include="W_Images\youtube.png" />
+    <Content Include="W_WebFormControl\WFC_Reviews.ascx" />
+    <Content Include="W_WebFormControl\WFC_W_LoginPage.ascx" />
+    <Content Include="W_WebFormControl\WFC_W_RegisterPage.ascx" />
+    <Content Include="U_MasterPage\Master_Site_2.Master" />
+    <Content Include="E_MasterPage\Master_Site_3.Master" />
+    <Content Include="A_MasterPage\Master_Site_4.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Website\Reviews.aspx" />
+    <Content Include="W_MasterPage\Master_Site_1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Website\AboutUs.aspx" />
+    <Content Include="Website\Company.aspx" />
+    <Content Include="Website\ContactUs.aspx" />
+    <Content Include="Website\HomePage.aspx" />
+    <Content Include="W_CSS\CSS_M_Site_1.css" />
+    <Content Include="W_CSS\CSS_WFC_AboutUs.css" />
+    <Content Include="W_CSS\CSS_WFC_Company.css" />
+    <Content Include="W_CSS\CSS_WFC_ContactUs.css" />
+    <Content Include="W_CSS\CSS_WFC_HomePage.css" />
+    <Content Include="W_Images\com_1.JPG" />
+    <Content Include="W_Images\com_2.JPG" />
+    <Content Include="W_Images\com_3.JPG" />
+    <Content Include="W_Images\com_4.JPG" />
+    <Content Include="W_Images\com_5.jpg" />
+    <Content Include="W_Images\Img_1.jpg" />
+    <Content Include="W_Images\img_2.jpg" />
+    <Content Include="W_Images\img_3.jpg" />
+    <Content Include="W_Images\img_4.jpg" />
+    <Content Include="W_Images\Img_5.jpg" />
+    <Content Include="W_WebFormControl\WFC_AboutUs.ascx" />
+    <Content Include="W_WebFormControl\WFC_Company.ascx" />
+    <Content Include="W_WebFormControl\WFC_ContactUs.ascx" />
+    <Content Include="W_WebFormControl\WFC_HomePage.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\A_ChangePassword.aspx.cs">
+      <DependentUpon>A_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_ChangePassword.aspx.designer.cs">
+      <DependentUpon>A_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_FrontPage.aspx.cs">
+      <DependentUpon>A_FrontPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_FrontPage.aspx.designer.cs">
+      <DependentUpon>A_FrontPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_E.aspx.cs">
+      <DependentUpon>A_List_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_E.aspx.designer.cs">
+      <DependentUpon>A_List_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_E_Details.aspx.cs">
+      <DependentUpon>A_List_E_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_E_Details.aspx.designer.cs">
+      <DependentUpon>A_List_E_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_J.aspx.cs">
+      <DependentUpon>A_List_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_J.aspx.designer.cs">
+      <DependentUpon>A_List_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_JS.aspx.cs">
+      <DependentUpon>A_List_JS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_JS.aspx.designer.cs">
+      <DependentUpon>A_List_JS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_JS_Details.aspx.cs">
+      <DependentUpon>A_List_JS_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_JS_Details.aspx.designer.cs">
+      <DependentUpon>A_List_JS_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_JS_E_J.aspx.cs">
+      <DependentUpon>A_List_JS_E_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_JS_E_J.aspx.designer.cs">
+      <DependentUpon>A_List_JS_E_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_List_J_Details.aspx.cs">
+      <DependentUpon>A_List_J_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_List_J_Details.aspx.designer.cs">
+      <DependentUpon>A_List_J_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_LoginPage.aspx.cs">
+      <DependentUpon>A_LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_LoginPage.aspx.designer.cs">
+      <DependentUpon>A_LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_R_Em.aspx.cs">
+      <DependentUpon>A_Message_R_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_R_Em.aspx.designer.cs">
+      <DependentUpon>A_Message_R_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_R_Js.aspx.cs">
+      <DependentUpon>A_Message_R_Js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_R_Js.aspx.designer.cs">
+      <DependentUpon>A_Message_R_Js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_R_Js_Em.aspx.cs">
+      <DependentUpon>A_Message_R_Js_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_R_Js_Em.aspx.designer.cs">
+      <DependentUpon>A_Message_R_Js_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_S_Em.aspx.cs">
+      <DependentUpon>A_Message_S_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_S_Em.aspx.designer.cs">
+      <DependentUpon>A_Message_S_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_S_Js.aspx.cs">
+      <DependentUpon>A_Message_S_Js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_S_Js.aspx.designer.cs">
+      <DependentUpon>A_Message_S_Js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_S_Js_Em.aspx.cs">
+      <DependentUpon>A_Message_S_Js_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_S_Js_Em.aspx.designer.cs">
+      <DependentUpon>A_Message_S_Js_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Em.aspx.cs">
+      <DependentUpon>A_Message_V_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Em.aspx.designer.cs">
+      <DependentUpon>A_Message_V_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Em_Details.aspx.cs">
+      <DependentUpon>A_Message_V_Em_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Em_Details.aspx.designer.cs">
+      <DependentUpon>A_Message_V_Em_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Js.aspx.cs">
+      <DependentUpon>A_Message_V_Js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Js.aspx.designer.cs">
+      <DependentUpon>A_Message_V_Js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Js_Details.aspx.cs">
+      <DependentUpon>A_Message_V_Js_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Js_Details.aspx.designer.cs">
+      <DependentUpon>A_Message_V_Js_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Js_Em.aspx.cs">
+      <DependentUpon>A_Message_V_Js_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_Js_Em.aspx.designer.cs">
+      <DependentUpon>A_Message_V_Js_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_S_R.aspx.cs">
+      <DependentUpon>A_Message_V_S_R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Message_V_S_R.aspx.designer.cs">
+      <DependentUpon>A_Message_V_S_R.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_R_Em.aspx.cs">
+      <DependentUpon>A_Notification_R_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_R_Em.aspx.designer.cs">
+      <DependentUpon>A_Notification_R_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_R_Js.aspx.cs">
+      <DependentUpon>A_Notification_R_Js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_R_Js.aspx.designer.cs">
+      <DependentUpon>A_Notification_R_Js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_R_Js_Em.aspx.cs">
+      <DependentUpon>A_Notification_R_Js_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_R_Js_Em.aspx.designer.cs">
+      <DependentUpon>A_Notification_R_Js_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_S_Em.aspx.cs">
+      <DependentUpon>A_Notification_S_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_S_Em.aspx.designer.cs">
+      <DependentUpon>A_Notification_S_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_S_Js.aspx.cs">
+      <DependentUpon>A_Notification_S_Js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_S_Js.aspx.designer.cs">
+      <DependentUpon>A_Notification_S_Js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_S_Js_Em.aspx.cs">
+      <DependentUpon>A_Notification_S_Js_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_S_Js_Em.aspx.designer.cs">
+      <DependentUpon>A_Notification_S_Js_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Em.aspx.cs">
+      <DependentUpon>A_Notification_V_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Em.aspx.designer.cs">
+      <DependentUpon>A_Notification_V_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Em_Details.aspx.cs">
+      <DependentUpon>A_Notification_V_Em_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Em_Details.aspx.designer.cs">
+      <DependentUpon>A_Notification_V_Em_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Js.aspx.cs">
+      <DependentUpon>A_Notification_V_Js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Js.aspx.designer.cs">
+      <DependentUpon>A_Notification_V_Js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Js_Details.aspx.cs">
+      <DependentUpon>A_Notification_V_Js_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Js_Details.aspx.designer.cs">
+      <DependentUpon>A_Notification_V_Js_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Js_Em.aspx.cs">
+      <DependentUpon>A_Notification_V_Js_Em.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_Js_Em.aspx.designer.cs">
+      <DependentUpon>A_Notification_V_Js_Em.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_S_R.aspx.cs">
+      <DependentUpon>A_Notification_V_S_R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Notification_V_S_R.aspx.designer.cs">
+      <DependentUpon>A_Notification_V_S_R.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Remove_E.aspx.cs">
+      <DependentUpon>A_Remove_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Remove_E.aspx.designer.cs">
+      <DependentUpon>A_Remove_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Remove_J.aspx.cs">
+      <DependentUpon>A_Remove_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Remove_J.aspx.designer.cs">
+      <DependentUpon>A_Remove_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Remove_JS.aspx.cs">
+      <DependentUpon>A_Remove_JS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Remove_JS.aspx.designer.cs">
+      <DependentUpon>A_Remove_JS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Remove_JS_E_J.aspx.cs">
+      <DependentUpon>A_Remove_JS_E_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Remove_JS_E_J.aspx.designer.cs">
+      <DependentUpon>A_Remove_JS_E_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Doc_E.aspx.cs">
+      <DependentUpon>A_Resources_Add_Doc_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Doc_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Doc_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Doc_J.aspx.cs">
+      <DependentUpon>A_Resources_Add_Doc_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Doc_J.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Doc_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Doc_J_E.aspx.cs">
+      <DependentUpon>A_Resources_Add_Doc_J_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Doc_J_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Doc_J_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_Doc.aspx.cs">
+      <DependentUpon>A_Resources_Add_Vid_Doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_Doc.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Vid_Doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_E.aspx.cs">
+      <DependentUpon>A_Resources_Add_Vid_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Vid_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_J.aspx.cs">
+      <DependentUpon>A_Resources_Add_Vid_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_J.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Vid_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_J_E.aspx.cs">
+      <DependentUpon>A_Resources_Add_Vid_J_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_Vid_J_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_Vid_J_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_View_Del.aspx.cs">
+      <DependentUpon>A_Resources_Add_View_Del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Add_View_Del.aspx.designer.cs">
+      <DependentUpon>A_Resources_Add_View_Del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Doc_E.aspx.cs">
+      <DependentUpon>A_Resources_Del_Doc_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Doc_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Doc_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Doc_J.aspx.cs">
+      <DependentUpon>A_Resources_Del_Doc_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Doc_J.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Doc_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Doc_J_E.aspx.cs">
+      <DependentUpon>A_Resources_Del_Doc_J_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Doc_J_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Doc_J_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_Doc.aspx.cs">
+      <DependentUpon>A_Resources_Del_Vid_Doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_Doc.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Vid_Doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_E.aspx.cs">
+      <DependentUpon>A_Resources_Del_Vid_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Vid_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_J.aspx.cs">
+      <DependentUpon>A_Resources_Del_Vid_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_J.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Vid_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_J_E.aspx.cs">
+      <DependentUpon>A_Resources_Del_Vid_J_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_Del_Vid_J_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_Del_Vid_J_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Doc_E.aspx.cs">
+      <DependentUpon>A_Resources_View_Doc_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Doc_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Doc_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Doc_J.aspx.cs">
+      <DependentUpon>A_Resources_View_Doc_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Doc_J.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Doc_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Doc_J_E.aspx.cs">
+      <DependentUpon>A_Resources_View_Doc_J_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Doc_J_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Doc_J_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_Doc.aspx.cs">
+      <DependentUpon>A_Resources_View_Vid_Doc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_Doc.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Vid_Doc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_E.aspx.cs">
+      <DependentUpon>A_Resources_View_Vid_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Vid_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_J.aspx.cs">
+      <DependentUpon>A_Resources_View_Vid_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_J.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Vid_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_J_E.aspx.cs">
+      <DependentUpon>A_Resources_View_Vid_J_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Resources_View_Vid_J_E.aspx.designer.cs">
+      <DependentUpon>A_Resources_View_Vid_J_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_E.aspx.cs">
+      <DependentUpon>A_Search_E.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_E.aspx.designer.cs">
+      <DependentUpon>A_Search_E.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_E_Details.aspx.cs">
+      <DependentUpon>A_Search_E_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_E_Details.aspx.designer.cs">
+      <DependentUpon>A_Search_E_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_Jobs.aspx.cs">
+      <DependentUpon>A_Search_Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_Jobs.aspx.designer.cs">
+      <DependentUpon>A_Search_Jobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_Jobs_Details.aspx.cs">
+      <DependentUpon>A_Search_Jobs_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_Jobs_Details.aspx.designer.cs">
+      <DependentUpon>A_Search_Jobs_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_JS.aspx.cs">
+      <DependentUpon>A_Search_JS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_JS.aspx.designer.cs">
+      <DependentUpon>A_Search_JS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_JS_Details.aspx.cs">
+      <DependentUpon>A_Search_JS_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_JS_Details.aspx.designer.cs">
+      <DependentUpon>A_Search_JS_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\A_Search_JS_E_J.aspx.cs">
+      <DependentUpon>A_Search_JS_E_J.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\A_Search_JS_E_J.aspx.designer.cs">
+      <DependentUpon>A_Search_JS_E_J.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="A_MasterPage\Master_Site_4.Master.cs">
+      <DependentUpon>Master_Site_4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_MasterPage\Master_Site_4.Master.designer.cs">
+      <DependentUpon>Master_Site_4.Master</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_ChangePassword.ascx.cs">
+      <DependentUpon>WFC_A_ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_ChangePassword.ascx.designer.cs">
+      <DependentUpon>WFC_A_ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_FrontPage.ascx.cs">
+      <DependentUpon>WFC_A_FrontPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_FrontPage.ascx.designer.cs">
+      <DependentUpon>WFC_A_FrontPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_E.ascx.cs">
+      <DependentUpon>WFC_A_List_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_E_Details.ascx.cs">
+      <DependentUpon>WFC_A_List_E_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_E_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_E_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_J.ascx.cs">
+      <DependentUpon>WFC_A_List_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_JS.ascx.cs">
+      <DependentUpon>WFC_A_List_JS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_JS.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_JS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_JS_Details.ascx.cs">
+      <DependentUpon>WFC_A_List_JS_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_JS_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_JS_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_JS_E_J.ascx.cs">
+      <DependentUpon>WFC_A_List_JS_E_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_JS_E_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_JS_E_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_J_Details.ascx.cs">
+      <DependentUpon>WFC_A_List_J_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_List_J_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_List_J_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_LoginPage.ascx.cs">
+      <DependentUpon>WFC_A_LoginPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_LoginPage.ascx.designer.cs">
+      <DependentUpon>WFC_A_LoginPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_R_Em.ascx.cs">
+      <DependentUpon>WFC_A_Message_R_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_R_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_R_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_R_Js.ascx.cs">
+      <DependentUpon>WFC_A_Message_R_Js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_R_Js.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_R_Js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_R_Js_Em.ascx.cs">
+      <DependentUpon>WFC_A_Message_R_Js_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_R_Js_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_R_Js_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_S_Em.ascx.cs">
+      <DependentUpon>WFC_A_Message_S_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_S_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_S_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_S_Js.ascx.cs">
+      <DependentUpon>WFC_A_Message_S_Js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_S_Js.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_S_Js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_S_Js_Em.ascx.cs">
+      <DependentUpon>WFC_A_Message_S_Js_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_S_Js_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_S_Js_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Em.ascx.cs">
+      <DependentUpon>WFC_A_Message_V_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_V_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Em_Details.ascx.cs">
+      <DependentUpon>WFC_A_Message_V_Em_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Em_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_V_Em_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Js.ascx.cs">
+      <DependentUpon>WFC_A_Message_V_Js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Js.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_V_Js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Js_Details.ascx.cs">
+      <DependentUpon>WFC_A_Message_V_Js_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Js_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_V_Js_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Js_Em.ascx.cs">
+      <DependentUpon>WFC_A_Message_V_Js_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_Js_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_V_Js_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_S_R.ascx.cs">
+      <DependentUpon>WFC_A_Message_V_S_R.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Message_V_S_R.ascx.designer.cs">
+      <DependentUpon>WFC_A_Message_V_S_R.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_R_Em.ascx.cs">
+      <DependentUpon>WFC_A_Notification_R_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_R_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_R_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_R_Js.ascx.cs">
+      <DependentUpon>WFC_A_Notification_R_Js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_R_Js.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_R_Js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_R_Js_Em.ascx.cs">
+      <DependentUpon>WFC_A_Notification_R_Js_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_R_Js_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_R_Js_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_S_Em.ascx.cs">
+      <DependentUpon>WFC_A_Notification_S_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_S_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_S_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_S_Js.ascx.cs">
+      <DependentUpon>WFC_A_Notification_S_Js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_S_Js.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_S_Js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_S_Js_Em.ascx.cs">
+      <DependentUpon>WFC_A_Notification_S_Js_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_S_Js_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_S_Js_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Em.ascx.cs">
+      <DependentUpon>WFC_A_Notification_V_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_V_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Em_Details.ascx.cs">
+      <DependentUpon>WFC_A_Notification_V_Em_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Em_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_V_Em_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Js.ascx.cs">
+      <DependentUpon>WFC_A_Notification_V_Js.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Js.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_V_Js.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Js_Details.ascx.cs">
+      <DependentUpon>WFC_A_Notification_V_Js_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Js_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_V_Js_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Js_Em.ascx.cs">
+      <DependentUpon>WFC_A_Notification_V_Js_Em.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_Js_Em.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_V_Js_Em.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_S_R.ascx.cs">
+      <DependentUpon>WFC_A_Notification_V_S_R.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Notification_V_S_R.ascx.designer.cs">
+      <DependentUpon>WFC_A_Notification_V_S_R.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_E.ascx.cs">
+      <DependentUpon>WFC_A_Remove_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Remove_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_J.ascx.cs">
+      <DependentUpon>WFC_A_Remove_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Remove_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_JS.ascx.cs">
+      <DependentUpon>WFC_A_Remove_JS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_JS.ascx.designer.cs">
+      <DependentUpon>WFC_A_Remove_JS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_JS_E_J.ascx.cs">
+      <DependentUpon>WFC_A_Remove_JS_E_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Remove_JS_E_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Remove_JS_E_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Doc_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Doc_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Doc_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Doc_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Doc_J.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Doc_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Doc_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Doc_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Doc_J_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Doc_J_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Doc_J_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Doc_J_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_Doc.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_Doc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_Doc.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_Doc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_J.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_J_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_J_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_Vid_J_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_Vid_J_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_View_Del.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Add_View_Del.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Add_View_Del.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Add_View_Del.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Doc_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Doc_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Doc_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Doc_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Doc_J.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Doc_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Doc_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Doc_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Doc_J_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Doc_J_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Doc_J_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Doc_J_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_Doc.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_Doc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_Doc.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_Doc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_J.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_J_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_J_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_Del_Vid_J_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_Del_Vid_J_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Doc_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Doc_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Doc_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Doc_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Doc_J.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Doc_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Doc_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Doc_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Doc_J_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Doc_J_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Doc_J_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Doc_J_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_Doc.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_Doc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_Doc.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_Doc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_J.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_J_E.ascx.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_J_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Resources_View_Vid_J_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Resources_View_Vid_J_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_E.ascx.cs">
+      <DependentUpon>WFC_A_Search_E.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_E.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_E.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_E_Details.ascx.cs">
+      <DependentUpon>WFC_A_Search_E_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_E_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_E_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_Jobs.ascx.cs">
+      <DependentUpon>WFC_A_Search_Jobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_Jobs.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_Jobs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_Jobs_Details.ascx.cs">
+      <DependentUpon>WFC_A_Search_Jobs_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_Jobs_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_Jobs_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_JS.ascx.cs">
+      <DependentUpon>WFC_A_Search_JS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_JS.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_JS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_JS_Details.ascx.cs">
+      <DependentUpon>WFC_A_Search_JS_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_JS_Details.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_JS_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_JS_E_J.ascx.cs">
+      <DependentUpon>WFC_A_Search_JS_E_J.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="A_WebFormControl\WFC_A_Search_JS_E_J.ascx.designer.cs">
+      <DependentUpon>WFC_A_Search_JS_E_J.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_AddVideo.aspx.cs">
+      <DependentUpon>E_AddVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_AddVideo.aspx.designer.cs">
+      <DependentUpon>E_AddVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ChangePassword.aspx.cs">
+      <DependentUpon>E_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ChangePassword.aspx.designer.cs">
+      <DependentUpon>E_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ChangeProfilePic.aspx.cs">
+      <DependentUpon>E_ChangeProfilePic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ChangeProfilePic.aspx.designer.cs">
+      <DependentUpon>E_ChangeProfilePic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_DeleteJob.aspx.cs">
+      <DependentUpon>E_DeleteJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_DeleteJob.aspx.designer.cs">
+      <DependentUpon>E_DeleteJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_EditInfo.aspx.cs">
+      <DependentUpon>E_EditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_EditInfo.aspx.designer.cs">
+      <DependentUpon>E_EditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_LoginPage.aspx.cs">
+      <DependentUpon>E_LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_LoginPage.aspx.designer.cs">
+      <DependentUpon>E_LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Messages.aspx.cs">
+      <DependentUpon>E_Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Messages.aspx.designer.cs">
+      <DependentUpon>E_Messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Message_Details.aspx.cs">
+      <DependentUpon>E_Message_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Message_Details.aspx.designer.cs">
+      <DependentUpon>E_Message_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Notifications.aspx.cs">
+      <DependentUpon>E_Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Notifications.aspx.designer.cs">
+      <DependentUpon>E_Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Notification_Details.aspx.cs">
+      <DependentUpon>E_Notification_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Notification_Details.aspx.designer.cs">
+      <DependentUpon>E_Notification_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_PostJobs.aspx.cs">
+      <DependentUpon>E_PostJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_PostJobs.aspx.designer.cs">
+      <DependentUpon>E_PostJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ProfilePage.aspx.cs">
+      <DependentUpon>E_ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ProfilePage.aspx.designer.cs">
+      <DependentUpon>E_ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_RegisterPage.aspx.cs">
+      <DependentUpon>E_RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_RegisterPage.aspx.designer.cs">
+      <DependentUpon>E_RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Resource_D.aspx.cs">
+      <DependentUpon>E_Resource_D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Resource_D.aspx.designer.cs">
+      <DependentUpon>E_Resource_D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Resource_V.aspx.cs">
+      <DependentUpon>E_Resource_V.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Resource_V.aspx.designer.cs">
+      <DependentUpon>E_Resource_V.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_Resource_V_D.aspx.cs">
+      <DependentUpon>E_Resource_V_D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_Resource_V_D.aspx.designer.cs">
+      <DependentUpon>E_Resource_V_D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_UpdateJobs.aspx.cs">
+      <DependentUpon>E_UpdateJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_UpdateJobs.aspx.designer.cs">
+      <DependentUpon>E_UpdateJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_UpdateJobs_Edit.aspx.cs">
+      <DependentUpon>E_UpdateJobs_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_UpdateJobs_Edit.aspx.designer.cs">
+      <DependentUpon>E_UpdateJobs_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ViewApplicants.aspx.cs">
+      <DependentUpon>E_ViewApplicants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ViewApplicants.aspx.designer.cs">
+      <DependentUpon>E_ViewApplicants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ViewApplicants_JS.aspx.cs">
+      <DependentUpon>E_ViewApplicants_JS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ViewApplicants_JS.aspx.designer.cs">
+      <DependentUpon>E_ViewApplicants_JS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ViewApplicants_JS_Details.aspx.cs">
+      <DependentUpon>E_ViewApplicants_JS_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ViewApplicants_JS_Details.aspx.designer.cs">
+      <DependentUpon>E_ViewApplicants_JS_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ViewJobs.aspx.cs">
+      <DependentUpon>E_ViewJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ViewJobs.aspx.designer.cs">
+      <DependentUpon>E_ViewJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ViewJobs_Details.aspx.cs">
+      <DependentUpon>E_ViewJobs_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ViewJobs_Details.aspx.designer.cs">
+      <DependentUpon>E_ViewJobs_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employer\E_ViewVideo.aspx.cs">
+      <DependentUpon>E_ViewVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employer\E_ViewVideo.aspx.designer.cs">
+      <DependentUpon>E_ViewVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="E_MasterPage\Master_Site_3.Master.cs">
+      <DependentUpon>Master_Site_3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_MasterPage\Master_Site_3.Master.designer.cs">
+      <DependentUpon>Master_Site_3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_AddVideo.ascx.cs">
+      <DependentUpon>WFC_E_AddVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_AddVideo.ascx.designer.cs">
+      <DependentUpon>WFC_E_AddVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ChangePassword.ascx.cs">
+      <DependentUpon>WFC_E_ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ChangePassword.ascx.designer.cs">
+      <DependentUpon>WFC_E_ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ChangeProfilePic.ascx.cs">
+      <DependentUpon>WFC_E_ChangeProfilePic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ChangeProfilePic.ascx.designer.cs">
+      <DependentUpon>WFC_E_ChangeProfilePic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_DeleteJob.ascx.cs">
+      <DependentUpon>WFC_E_DeleteJob.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_DeleteJob.ascx.designer.cs">
+      <DependentUpon>WFC_E_DeleteJob.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_EditInfo.ascx.cs">
+      <DependentUpon>WFC_E_EditInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_EditInfo.ascx.designer.cs">
+      <DependentUpon>WFC_E_EditInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_LoginPage.ascx.cs">
+      <DependentUpon>WFC_E_LoginPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_LoginPage.ascx.designer.cs">
+      <DependentUpon>WFC_E_LoginPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Messages.ascx.cs">
+      <DependentUpon>WFC_E_Messages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Messages.ascx.designer.cs">
+      <DependentUpon>WFC_E_Messages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Message_Details.ascx.cs">
+      <DependentUpon>WFC_E_Message_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Message_Details.ascx.designer.cs">
+      <DependentUpon>WFC_E_Message_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Notifications.ascx.cs">
+      <DependentUpon>WFC_E_Notifications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Notifications.ascx.designer.cs">
+      <DependentUpon>WFC_E_Notifications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Notification_Details.ascx.cs">
+      <DependentUpon>WFC_E_Notification_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Notification_Details.ascx.designer.cs">
+      <DependentUpon>WFC_E_Notification_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_PostJobs.ascx.cs">
+      <DependentUpon>WFC_E_PostJobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_PostJobs.ascx.designer.cs">
+      <DependentUpon>WFC_E_PostJobs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ProfilePage.ascx.cs">
+      <DependentUpon>WFC_E_ProfilePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ProfilePage.ascx.designer.cs">
+      <DependentUpon>WFC_E_ProfilePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_RegisterPage.ascx.cs">
+      <DependentUpon>WFC_E_RegisterPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_RegisterPage.ascx.designer.cs">
+      <DependentUpon>WFC_E_RegisterPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Resource_D.ascx.cs">
+      <DependentUpon>WFC_E_Resource_D.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Resource_D.ascx.designer.cs">
+      <DependentUpon>WFC_E_Resource_D.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Resource_V.ascx.cs">
+      <DependentUpon>WFC_E_Resource_V.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Resource_V.ascx.designer.cs">
+      <DependentUpon>WFC_E_Resource_V.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Resource_V_D.ascx.cs">
+      <DependentUpon>WFC_E_Resource_V_D.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_Resource_V_D.ascx.designer.cs">
+      <DependentUpon>WFC_E_Resource_V_D.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_UpdateJobs.ascx.cs">
+      <DependentUpon>WFC_E_UpdateJobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_UpdateJobs.ascx.designer.cs">
+      <DependentUpon>WFC_E_UpdateJobs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_UpdateJobs_Edit.ascx.cs">
+      <DependentUpon>WFC_E_UpdateJobs_Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_UpdateJobs_Edit.ascx.designer.cs">
+      <DependentUpon>WFC_E_UpdateJobs_Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewApplicants.ascx.cs">
+      <DependentUpon>WFC_E_ViewApplicants.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewApplicants.ascx.designer.cs">
+      <DependentUpon>WFC_E_ViewApplicants.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewApplicants_JS.ascx.cs">
+      <DependentUpon>WFC_E_ViewApplicants_JS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewApplicants_JS.ascx.designer.cs">
+      <DependentUpon>WFC_E_ViewApplicants_JS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewApplicants_JS_Details.ascx.cs">
+      <DependentUpon>WFC_E_ViewApplicants_JS_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewApplicants_JS_Details.ascx.designer.cs">
+      <DependentUpon>WFC_E_ViewApplicants_JS_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewJobs.ascx.cs">
+      <DependentUpon>WFC_E_ViewJobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewJobs.ascx.designer.cs">
+      <DependentUpon>WFC_E_ViewJobs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewJobs_Details.ascx.cs">
+      <DependentUpon>WFC_E_ViewJobs_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewJobs_Details.ascx.designer.cs">
+      <DependentUpon>WFC_E_ViewJobs_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewVideo.ascx.cs">
+      <DependentUpon>WFC_E_ViewVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="E_WebFormControl\WFC_E_ViewVideo.ascx.designer.cs">
+      <DependentUpon>WFC_E_ViewVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\U_AddVideoResume.aspx.cs">
+      <DependentUpon>U_AddVideoResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_AddVideoResume.aspx.designer.cs">
+      <DependentUpon>U_AddVideoResume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_AppliedJobs.aspx.cs">
+      <DependentUpon>U_AppliedJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_AppliedJobs.aspx.designer.cs">
+      <DependentUpon>U_AppliedJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_AppliedJobs_JobView.aspx.cs">
+      <DependentUpon>U_AppliedJobs_JobView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_AppliedJobs_JobView.aspx.designer.cs">
+      <DependentUpon>U_AppliedJobs_JobView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_ChangePassword.aspx.cs">
+      <DependentUpon>U_ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_ChangePassword.aspx.designer.cs">
+      <DependentUpon>U_ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_ChangeProfilePic.aspx.cs">
+      <DependentUpon>U_ChangeProfilePic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_ChangeProfilePic.aspx.designer.cs">
+      <DependentUpon>U_ChangeProfilePic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_EditInfo.aspx.cs">
+      <DependentUpon>U_EditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_EditInfo.aspx.designer.cs">
+      <DependentUpon>U_EditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_EditInfo_General.aspx.cs">
+      <DependentUpon>U_EditInfo_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_EditInfo_General.aspx.designer.cs">
+      <DependentUpon>U_EditInfo_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_EditInfo_Professional.aspx.cs">
+      <DependentUpon>U_EditInfo_Professional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_EditInfo_Professional.aspx.designer.cs">
+      <DependentUpon>U_EditInfo_Professional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_JobSearch.aspx.cs">
+      <DependentUpon>U_JobSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_JobSearch.aspx.designer.cs">
+      <DependentUpon>U_JobSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_JobSearch_JobView.aspx.cs">
+      <DependentUpon>U_JobSearch_JobView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_JobSearch_JobView.aspx.designer.cs">
+      <DependentUpon>U_JobSearch_JobView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_JobSearch_Table.aspx.cs">
+      <DependentUpon>U_JobSearch_Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_JobSearch_Table.aspx.designer.cs">
+      <DependentUpon>U_JobSearch_Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_LoginPage.aspx.cs">
+      <DependentUpon>U_LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_LoginPage.aspx.designer.cs">
+      <DependentUpon>U_LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Messages.aspx.cs">
+      <DependentUpon>U_Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Messages.aspx.designer.cs">
+      <DependentUpon>U_Messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Message_Details.aspx.cs">
+      <DependentUpon>U_Message_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Message_Details.aspx.designer.cs">
+      <DependentUpon>U_Message_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Notifications.aspx.cs">
+      <DependentUpon>U_Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Notifications.aspx.designer.cs">
+      <DependentUpon>U_Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Notification_Details.aspx.cs">
+      <DependentUpon>U_Notification_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Notification_Details.aspx.designer.cs">
+      <DependentUpon>U_Notification_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_ProfilePage.aspx.cs">
+      <DependentUpon>U_ProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_ProfilePage.aspx.designer.cs">
+      <DependentUpon>U_ProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_RegisterPage.aspx.cs">
+      <DependentUpon>U_RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_RegisterPage.aspx.designer.cs">
+      <DependentUpon>U_RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Resource_D.aspx.cs">
+      <DependentUpon>U_Resource_D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Resource_D.aspx.designer.cs">
+      <DependentUpon>U_Resource_D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Resource_V.aspx.cs">
+      <DependentUpon>U_Resource_V.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Resource_V.aspx.designer.cs">
+      <DependentUpon>U_Resource_V.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_Resource_V_D.aspx.cs">
+      <DependentUpon>U_Resource_V_D.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_Resource_V_D.aspx.designer.cs">
+      <DependentUpon>U_Resource_V_D.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_UploadResume.aspx.cs">
+      <DependentUpon>U_UploadResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_UploadResume.aspx.designer.cs">
+      <DependentUpon>U_UploadResume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_ViewResume.aspx.cs">
+      <DependentUpon>U_ViewResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_ViewResume.aspx.designer.cs">
+      <DependentUpon>U_ViewResume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\U_ViewVideoResume.aspx.cs">
+      <DependentUpon>U_ViewVideoResume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\U_ViewVideoResume.aspx.designer.cs">
+      <DependentUpon>U_ViewVideoResume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="U_MasterPage\Master_Site_2.Master.cs">
+      <DependentUpon>Master_Site_2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_MasterPage\Master_Site_2.Master.designer.cs">
+      <DependentUpon>Master_Site_2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_AddVideoResume.ascx.cs">
+      <DependentUpon>WFC_U_AddVideoResume.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_AddVideoResume.ascx.designer.cs">
+      <DependentUpon>WFC_U_AddVideoResume.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_AppliedJobs.ascx.cs">
+      <DependentUpon>WFC_U_AppliedJobs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_AppliedJobs.ascx.designer.cs">
+      <DependentUpon>WFC_U_AppliedJobs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_AppliedJobs_JobView.ascx.cs">
+      <DependentUpon>WFC_U_AppliedJobs_JobView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_AppliedJobs_JobView.ascx.designer.cs">
+      <DependentUpon>WFC_U_AppliedJobs_JobView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ChangePassword.ascx.cs">
+      <DependentUpon>WFC_U_ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ChangePassword.ascx.designer.cs">
+      <DependentUpon>WFC_U_ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ChangeProfilePic.ascx.cs">
+      <DependentUpon>WFC_U_ChangeProfilePic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ChangeProfilePic.ascx.designer.cs">
+      <DependentUpon>WFC_U_ChangeProfilePic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_EditInfo.ascx.cs">
+      <DependentUpon>WFC_U_EditInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_EditInfo.ascx.designer.cs">
+      <DependentUpon>WFC_U_EditInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_EditInfo_General.ascx.cs">
+      <DependentUpon>WFC_U_EditInfo_General.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_EditInfo_General.ascx.designer.cs">
+      <DependentUpon>WFC_U_EditInfo_General.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_EditInfo_Professional.ascx.cs">
+      <DependentUpon>WFC_U_EditInfo_Professional.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_EditInfo_Professional.ascx.designer.cs">
+      <DependentUpon>WFC_U_EditInfo_Professional.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_JobSearch.ascx.cs">
+      <DependentUpon>WFC_U_JobSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_JobSearch.ascx.designer.cs">
+      <DependentUpon>WFC_U_JobSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_JobSearch_JobView.ascx.cs">
+      <DependentUpon>WFC_U_JobSearch_JobView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_JobSearch_JobView.ascx.designer.cs">
+      <DependentUpon>WFC_U_JobSearch_JobView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_JobSearch_Table.ascx.cs">
+      <DependentUpon>WFC_U_JobSearch_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_JobSearch_Table.ascx.designer.cs">
+      <DependentUpon>WFC_U_JobSearch_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_LoginPage.ascx.cs">
+      <DependentUpon>WFC_U_LoginPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_LoginPage.ascx.designer.cs">
+      <DependentUpon>WFC_U_LoginPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Messages.ascx.cs">
+      <DependentUpon>WFC_U_Messages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Messages.ascx.designer.cs">
+      <DependentUpon>WFC_U_Messages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Message_Details.ascx.cs">
+      <DependentUpon>WFC_U_Message_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Message_Details.ascx.designer.cs">
+      <DependentUpon>WFC_U_Message_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Notifications.ascx.cs">
+      <DependentUpon>WFC_U_Notifications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Notifications.ascx.designer.cs">
+      <DependentUpon>WFC_U_Notifications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Notification_Details.ascx.cs">
+      <DependentUpon>WFC_U_Notification_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Notification_Details.ascx.designer.cs">
+      <DependentUpon>WFC_U_Notification_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ProfilePage.ascx.cs">
+      <DependentUpon>WFC_U_ProfilePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ProfilePage.ascx.designer.cs">
+      <DependentUpon>WFC_U_ProfilePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_RegisterPage.ascx.cs">
+      <DependentUpon>WFC_U_RegisterPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_RegisterPage.ascx.designer.cs">
+      <DependentUpon>WFC_U_RegisterPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Resource_D.ascx.cs">
+      <DependentUpon>WFC_U_Resource_D.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Resource_D.ascx.designer.cs">
+      <DependentUpon>WFC_U_Resource_D.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Resource_V.ascx.cs">
+      <DependentUpon>WFC_U_Resource_V.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Resource_V.ascx.designer.cs">
+      <DependentUpon>WFC_U_Resource_V.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Resource_V_D.ascx.cs">
+      <DependentUpon>WFC_U_Resource_V_D.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_Resource_V_D.ascx.designer.cs">
+      <DependentUpon>WFC_U_Resource_V_D.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_UploadResume.ascx.cs">
+      <DependentUpon>WFC_U_UploadResume.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_UploadResume.ascx.designer.cs">
+      <DependentUpon>WFC_U_UploadResume.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ViewResume.ascx.cs">
+      <DependentUpon>WFC_U_ViewResume.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ViewResume.ascx.designer.cs">
+      <DependentUpon>WFC_U_ViewResume.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ViewVideoResume.ascx.cs">
+      <DependentUpon>WFC_U_ViewVideoResume.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="U_WebFormControl\WFC_U_ViewVideoResume.ascx.designer.cs">
+      <DependentUpon>WFC_U_ViewVideoResume.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\Reviews.aspx.cs">
+      <DependentUpon>Reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\Reviews.aspx.designer.cs">
+      <DependentUpon>Reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\W_LoginPage.aspx.cs">
+      <DependentUpon>W_LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\W_LoginPage.aspx.designer.cs">
+      <DependentUpon>W_LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\W_RegisterPage.aspx.cs">
+      <DependentUpon>W_RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\W_RegisterPage.aspx.designer.cs">
+      <DependentUpon>W_RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W_MasterPage\Master_Site_1.Master.cs">
+      <DependentUpon>Master_Site_1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_MasterPage\Master_Site_1.Master.designer.cs">
+      <DependentUpon>Master_Site_1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_AboutUs.ascx.cs">
+      <DependentUpon>WFC_AboutUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_AboutUs.ascx.designer.cs">
+      <DependentUpon>WFC_AboutUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_Company.ascx.cs">
+      <DependentUpon>WFC_Company.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_Company.ascx.designer.cs">
+      <DependentUpon>WFC_Company.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_ContactUs.ascx.cs">
+      <DependentUpon>WFC_ContactUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_ContactUs.ascx.designer.cs">
+      <DependentUpon>WFC_ContactUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_HomePage.ascx.cs">
+      <DependentUpon>WFC_HomePage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_HomePage.ascx.designer.cs">
+      <DependentUpon>WFC_HomePage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_Reviews.ascx.cs">
+      <DependentUpon>WFC_Reviews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_Reviews.ascx.designer.cs">
+      <DependentUpon>WFC_Reviews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_W_LoginPage.ascx.cs">
+      <DependentUpon>WFC_W_LoginPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_W_LoginPage.ascx.designer.cs">
+      <DependentUpon>WFC_W_LoginPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_W_RegisterPage.ascx.cs">
+      <DependentUpon>WFC_W_RegisterPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W_WebFormControl\WFC_W_RegisterPage.ascx.designer.cs">
+      <DependentUpon>WFC_W_RegisterPage.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8429</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8429/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
