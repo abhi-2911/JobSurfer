@@ -2,15 +2,15 @@
 
 Online Job Portal called : JobSurfer , a project submitted to YCMOU for the fulfillment of the requirements of Bachelor of Computer Apllication Graduation Degree .
 
-<!--Demo Video : <a target="_blank" href="https://youtu.be/TmliZHj7ivc">Link</a>-->
+<!--Demo Video : <a target="_blank" href="https://yout.be/Tj7ivc">Link</a>-->
 
-## Documentation
+<!--## Documentation-->
 
-Synopsis  : <a target="_blank" href="https://github.com/abhi-2911/JobSurfer-Project-Sem-6/blob/master/Synopsis/Synopsis.pdf">Link</a>
+<!--Synopsis  : <a target="_blank" href="https://github.com/abhi-2911/JobSurfer-Project-Sem-6/blob/master/Synopsis/Synopsis.pdf">Link</a> -->
 
-Presentation  : <a target="_blank" href="https://github.com/abhi-2911/JobSurfer-Project-Sem-6/blob/master/Presentation/Presentation_JobSurfer.pdf">Link</a>
+<!--Presentation  : <a target="_blank" href="https://github.com/abhi-2911/JobSurfer-Project-Sem-6/blob/master/Presentation/Presentation_JobSurfer.pdf">Link</a> -->
 
-Project Report Book : <a target="_blank" href="https://github.com/abhi-2911/JobSurfer-Project-Sem-6/blob/master/Project%20Report%20Book/JobSurfer%20Project%20Report.pdf">Link</a>
+<!--Project Report Book : <a target="_blank" href="https://github.com/abhi-2911/JobSurfer-Project-Sem-6/blob/master/Project%20Report%20Book/JobSurfer%20Project%20Report.pdf">Link</a> -->
 
 ## Points To Know
 1) IDE used , Visual Studio 2015
