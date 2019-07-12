@@ -61,7 +61,7 @@ Project Report Book : <a target="_blank" href="https://github.com/abhi-2911/JobS
 
 <img src="ScreenShots/Admin/Screenshot (176).png" height="400" width="600">
 
-<img src="ScreenShots/JobSeeker/Screenshot (103).png" height="400" width="600">
+<img src="ScreenShots/Employer/Screenshot (133).png" height="400" width="600">
 
 <img src="ScreenShots/Website/Screenshot (78).png" height="400" width="600">
 
